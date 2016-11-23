@@ -70,6 +70,17 @@ a:hover {
     }
 }
 
+.SRRoot {
+    float: right;
+    margin: 10px;
+}
+
+@media screen and (max-width: 42em) {
+    .SRRoot {
+        float: inherit;
+    }
+}
+
 .SystemRequirements {
     display: inline-block;
     color: rgba(255, 255, 255, 0.7);
@@ -95,6 +106,12 @@ a:hover {
 }
 
 .SystemRequirements ul li {
+}
+
+@media screen and (max-width: 42em) {
+    .SystemRequirements {
+        min-width: 100%;
+    }
 }
 
 .page-header {
