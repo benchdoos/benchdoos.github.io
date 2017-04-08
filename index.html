@@ -10,7 +10,8 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/tabs.css" media="screen">
-    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/font-awesome.min.css" media="screen">
+
 
 
     <script src="libs/jquery.min.js"></script>
@@ -20,37 +21,44 @@
     <!-- Yandex.Metrika counter -->
     <script type="text/javascript">
         (function (d, w, c) {
-            (w[c] = w[c] || []).push(function() {
+            (w[c] = w[c] || []).push(function () {
                 try {
                     w.yaCounter41811549 = new Ya.Metrika({
-                        id:41811549,
-                        clickmap:true,
-                        trackLinks:true,
-                        accurateTrackBounce:true,
-                        webvisor:true
+                        id: 41811549,
+                        clickmap: true,
+                        trackLinks: true,
+                        accurateTrackBounce: true,
+                        webvisor: true
                     });
-                } catch(e) { }
+                } catch (e) {
+                }
             });
 
             var n = d.getElementsByTagName("script")[0],
                 s = d.createElement("script"),
-                f = function () { n.parentNode.insertBefore(s, n); };
+                f = function () {
+                    n.parentNode.insertBefore(s, n);
+                };
             s.type = "text/javascript";
             s.async = true;
             s.src = "https://mc.yandex.ru/metrika/watch.js";
 
             if (w.opera == "[object Opera]") {
                 d.addEventListener("DOMContentLoaded", f, false);
-            } else { f(); }
+            } else {
+                f();
+            }
         })(document, window, "yandex_metrika_callbacks");
     </script>
-    <noscript><div><img src="https://mc.yandex.ru/watch/41811549" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <noscript>
+        <div><img src="https://mc.yandex.ru/watch/41811549" style="position:absolute; left:-9999px;" alt=""/></div>
+    </noscript>
     <!-- /Yandex.Metrika counter -->
 </head>
 <body>
 <section class="page-header">
     <h1 class="project-name">WeblocOpener</h1>
-    <h2 class="project-tagline">Open MacOS Safari <code>.webloc</code> link-files on Windows</h2>
+    <h2 class="project-tagline">Open <i class="fa fa-apple" aria-hidden="true"></i> MacOS Safari <code>.webloc</code> link-files on <i class="fa fa-windows" aria-hidden="true"></i> Windows</h2>
     <a href="https://github.com/benchdoos/WeblocOpener" class="btn">View on GitHub</a>
 
 
@@ -66,22 +74,27 @@
         <a id="weblocopener" class="anchor" href="#weblocopener" aria-hidden="true">
             <span aria-hidden="true" class="octicon octicon-link"></span></a>WeblocOpener
     </h1>
-    <a href="http://t.me/bench_doos" style="float:right; padding-left: 10px;" title="Telegram: Contact me fast! @bench_doos" ><img src="img/telegram-icon-128.png" style="height: 18px;"/></a>
+    <a href="http://t.me/bench_doos" style="float:right; padding-left: 10px;"
+       title="Telegram: Contact me fast! @bench_doos"><img src="img/telegram-icon-128.png" style="height: 18px;"/></a>
     <a href="mailto:weblocopener@gmail.com?subject=WeblocOpener feedback
     &body=Type here your question / problem, I try to help you as soon as it is possible!
     %0AYou can attach log files (see WeblocOpener - Settings -> About -> Log folder -> zip log folder -> attach).
 %0ADon't forget to close the application before zipping logs;)" style="float:right;"
        title="E-MAIL: Leave a feedback to help me to improve the application!">Feedback</a>
-  
+
     <img src="img/1.3.1.png" style="float:left; padding-right: 15px;"/>
     <h2 style="float:inherit;">
-        <a class="anchor" href="#introduction" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Update 1.3.1 is available now!
+        <a class="anchor" href="#introduction" aria-hidden="true"><span aria-hidden="true"
+                                                                        class="octicon octicon-link"></span></a>Update
+        1.3.1 is available now!
     </h2>
     <div style="padding-left:15px; display: table; font-size:14px">
         <p>New features of WeblocOpener 1.3.1:</p>
         <p><span style="color: #4f7ece">&#9734;&nbsp;</span>Url validation is more accurate.</p>
-        <p><span style="color: #4f7ece">&#9734;&nbsp;</span>Now you see if url is valid or not - valid urls are underlined and colored in blue, otherwise it is standart black.</p>
-        <p><span style="color: #4f7ece">&#9734;&nbsp;</span>Now supported protocols are only  <code>http://</code>, <code>https://</code>, and <code>ftp://</code>.</p>
+        <p><span style="color: #4f7ece">&#9734;&nbsp;</span>Now you see if url is valid or not - valid urls are
+            underlined and colored in blue, otherwise it is standart black.</p>
+        <p><span style="color: #4f7ece">&#9734;&nbsp;</span>Now supported protocols are only <code>http://</code>,
+            <code>https://</code>, and <code>ftp://</code>.</p>
     </div>
     <br><br><br><br>
     <h2 style="margin-top:0;">
@@ -96,16 +109,16 @@
             <p>System Requirements</p>
             <ul>
                 <li><b>Operating system:</b></li>
-                <li>Windows XP (SP3), Vista, 7, 8, 10</li>
+                <li><i class="fa fa-windows" aria-hidden="true"></i> XP (SP3), Vista, 7, 8, 10</li>
                 <li><b>CPU:</b></li>
-                <li>Pentium 2 266MHz or better</li>
+                <li><i class="fa fa-microchip" aria-hidden="true"></i> Pentium 2 266MHz or better</li>
                 <li><b>Memory:</b></li>
-                <li>128 MB RAM</li>
+                <li><i class="fa fa-tasks" aria-hidden="true"></i> 128 MB RAM</li>
                 <li><b>Hard drive:</b></li>
-                <li>25 MB free hard disk space</li>
+                <li><i class="fa fa-hdd-o" aria-hidden="true"></i> 25 MB free hard disk space</li>
                 <br>
                 <li><b>Additional software:</b></li>
-                <li>Java 8 required - <a href="https://java.com/download/">Download</a></li>
+                <li><i class="fa fa-server" aria-hidden="true"></i> Java 8 required - <a href="https://java.com/download/">Download</a></li>
             </ul>
         </div>
     </div>
@@ -142,33 +155,54 @@
         <label for="tab1" title="Wordpress">Have questions?</label>
         <input id="tab2" type="radio" name="tabs">
         <label for="tab2" title="Windows">Windows</label>
-       <!-- <input id="tab3" type="radio" name="tabs">
-        <label for="tab3" title="HTML5">HTML5</label>
-        <input id="tab4" type="radio" name="tabs">
-        <label for="tab4" title="CSS3">CSS3</label>-->
+        <!-- <input id="tab3" type="radio" name="tabs">
+         <label for="tab3" title="HTML5">HTML5</label>
+         <input id="tab4" type="radio" name="tabs">
+         <label for="tab4" title="CSS3">CSS3</label>-->
         <section id="content-tab1">
-            What is WeblocOpener? And how to work with it? Greeting video is available down below <i class="fa fa-level-down" aria-hidden="true"></i>
+            What is WeblocOpener? And how to work with it? Greeting video is available down below <i
+                class="fa fa-level-down" aria-hidden="true"></i>
             <br><br>
-            <iframe width="800" height="450"
-                    src="https://www.youtube.com/embed/Z-bT-VWMDsQ" frameborder="0" allowfullscreen></iframe>
+            <p id="youtubeDefault">
+                <iframe width="800" height="450"
+                        src="https://www.youtube.com/embed/Z-bT-VWMDsQ" frameborder="0" allowfullscreen></iframe>
+            </p>
         </section>
         <section id="content-tab2">
-            <p> Microsoft Windows (произносится [майкрософт ви́ндоус]) — семейство проприетарных операционных систем корпорации Microsoft, ориентированных на применение графического интерфейса при управлении. </p>
-            <p> Изначально Windows была всего лишь графической надстройкой для MS-DOS. По состоянию на март 2013 года под управлением операционных систем семейства Windows по данным ресурса NetMarketShare (Net Applications) работает около 90 % персональных компьютеров[1]. Операционные системы Windows работают на платформах x86, x86-64, IA-64, ARM. </p>
+            <p>WeblocOpener on Windows has full support. You can simply create, edit and open <code>.webloc</code> links
+                on Windows!</p>
         </section>
         <section id="content-tab3">
-            <p> HTML5 (англ. HyperText Markup Language, version 5) — язык для структурирования и представления содержимого всемирной паутины. Это пятая версия HTML, последняя (четвёртая) версия которого была стандартизирована в 1997 году. По состоянию на октябрь 2013 года, HTML5 ещё находится в разработке, но, фактически, является рабочим стандартом (англ. HTML Living Standard). Цель разработки HTML5 — улучшение уровня поддержки мультимедиа-технологий, сохраняя при этом удобочитаемость кода для человека и простоту анализа для парсеров. </p>
-            <p> Во всемирной паутине долгое время использовались стандарты HTML 4.01 и XHTML 1.1, и веб-страницы на практике оказывались свёрстаны с использованием смеси особенностей, представленных различными спецификациями, включая спецификации программных продуктов, например веб-браузеров, а также сложившихся общеупотребительных приёмов. HTML5 был создан, как единый язык разметки, который мог бы сочетать синтаксические нормы HTML и XHTML. Он расширяет, улучшает и рационализирует разметку документов, а также добавляет единое API для сложных веб-приложений. </p>
+            <p> HTML5 (англ. HyperText Markup Language, version 5) — язык для структурирования и представления
+                содержимого всемирной паутины. Это пятая версия HTML, последняя (четвёртая) версия которого была
+                стандартизирована в 1997 году. По состоянию на октябрь 2013 года, HTML5 ещё находится в разработке, но,
+                фактически, является рабочим стандартом (англ. HTML Living Standard). Цель разработки HTML5 — улучшение
+                уровня поддержки мультимедиа-технологий, сохраняя при этом удобочитаемость кода для человека и простоту
+                анализа для парсеров. </p>
+            <p> Во всемирной паутине долгое время использовались стандарты HTML 4.01 и XHTML 1.1, и веб-страницы на
+                практике оказывались свёрстаны с использованием смеси особенностей, представленных различными
+                спецификациями, включая спецификации программных продуктов, например веб-браузеров, а также сложившихся
+                общеупотребительных приёмов. HTML5 был создан, как единый язык разметки, который мог бы сочетать
+                синтаксические нормы HTML и XHTML. Он расширяет, улучшает и рационализирует разметку документов, а также
+                добавляет единое API для сложных веб-приложений. </p>
         </section>
         <section id="content-tab4">
-            <p> Спецификация CSS3 — это неоспоримое будущее в области декоративного оформления веб-страниц, и ее разработка еще далека от завершения. Большинство модулей все еще продолжает совершенствоваться и модифицироваться, и ни один браузер не поддерживает все модули. Это означает, что CSS3 испытывает такие же сложности, как и HTML5. Веб-разработчикам нужно решать, какие возможности использовать, а какие игнорировать, а также каким образом заполнить зияющие пробелы в браузерной поддержке. </p>
-            <p> CSS3 не является частью спецификации HTML5. Эти два стандарта были разработаны отдельно друг от друга, разными людьми, работающими в разное время в различных местах. Но даже организация W3C призывает веб-разработчиков использовать HTML5 и CSS3 вместе, как часть одной новой волны современного веб-дизайна. </p>
+            <p> Спецификация CSS3 — это неоспоримое будущее в области декоративного оформления веб-страниц, и ее
+                разработка еще далека от завершения. Большинство модулей все еще продолжает совершенствоваться и
+                модифицироваться, и ни один браузер не поддерживает все модули. Это означает, что CSS3 испытывает такие
+                же сложности, как и HTML5. Веб-разработчикам нужно решать, какие возможности использовать, а какие
+                игнорировать, а также каким образом заполнить зияющие пробелы в браузерной поддержке. </p>
+            <p> CSS3 не является частью спецификации HTML5. Эти два стандарта были разработаны отдельно друг от друга,
+                разными людьми, работающими в разное время в различных местах. Но даже организация W3C призывает
+                веб-разработчиков использовать HTML5 и CSS3 вместе, как часть одной новой волны современного
+                веб-дизайна. </p>
         </section>
     </div>
 
     <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/benchdoos/WeblocOpener">WeblocOpener</a> is maintained by <a
-                href="https://github.com/benchdoos">benchdoos</a> (Eugene Zrazhevsky). <a href="mailto:weblocopener@gmail.com" title="Send e-mail to me.">Contact me!</a></span>
+                href="https://github.com/benchdoos">benchdoos</a> (Eugene Zrazhevsky). <a
+                href="mailto:weblocopener@gmail.com" title="Send e-mail to me.">Contact me!</a></span>
 
         <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a
                 href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a
@@ -179,31 +213,38 @@
 <!-- Yandex.Metrika counter -->
 <script type="text/javascript">
     (function (d, w, c) {
-        (w[c] = w[c] || []).push(function() {
+        (w[c] = w[c] || []).push(function () {
             try {
                 w.yaCounter41811549 = new Ya.Metrika({
-                    id:41811549,
-                    clickmap:true,
-                    trackLinks:true,
-                    accurateTrackBounce:true,
-                    webvisor:true
+                    id: 41811549,
+                    clickmap: true,
+                    trackLinks: true,
+                    accurateTrackBounce: true,
+                    webvisor: true
                 });
-            } catch(e) { }
+            } catch (e) {
+            }
         });
 
         var n = d.getElementsByTagName("script")[0],
             s = d.createElement("script"),
-            f = function () { n.parentNode.insertBefore(s, n); };
+            f = function () {
+                n.parentNode.insertBefore(s, n);
+            };
         s.type = "text/javascript";
         s.async = true;
         s.src = "https://mc.yandex.ru/metrika/watch.js";
 
         if (w.opera == "[object Opera]") {
             d.addEventListener("DOMContentLoaded", f, false);
-        } else { f(); }
+        } else {
+            f();
+        }
     })(document, window, "yandex_metrika_callbacks");
 </script>
-<noscript><div><img src="https://mc.yandex.ru/watch/41811549" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<noscript>
+    <div><img src="https://mc.yandex.ru/watch/41811549" style="position:absolute; left:-9999px;" alt=""/></div>
+</noscript>
 <!-- /Yandex.Metrika counter -->
 </body>
 </html>
