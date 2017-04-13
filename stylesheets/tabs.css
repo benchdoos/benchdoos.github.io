@@ -197,7 +197,7 @@ h1 {
 }
 
 .tabs > label[for*="3"]:before {
-    content: "\f13b";
+    content: "\f17c";
 }
 
 .tabs > label[for*="4"]:before {
