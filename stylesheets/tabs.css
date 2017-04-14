@@ -204,6 +204,19 @@ h1 {
     content: "\f13c";
 }
 
+/* Цвет конкретных вкладок при выделении */
+.tabs > input:checked + label[for*="2"] {/*Windows*/
+    color: 00adef;
+}
+
+.tabs > input:checked + label[for*="3"] {/*Linux*/
+    color: black;
+}
+
+.tabs > input:checked + label[for*="4"] {/*MacOS*/
+    color: #969696;
+}
+
 /* Изменения стиля переключателей вкладок при наведении */
 
 .tabs > label:hover {
