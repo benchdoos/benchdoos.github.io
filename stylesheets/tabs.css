@@ -206,7 +206,7 @@ h1 {
 
 /* Цвет конкретных вкладок при выделении */
 .tabs > input:checked + label[for*="2"] {/*Windows*/
-    color: 00adef;
+    color: #00adef;
 }
 
 .tabs > input:checked + label[for*="3"] {/*Linux*/
