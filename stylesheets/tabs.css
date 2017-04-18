@@ -109,7 +109,7 @@ h1 {
 /* Базовый контейнер табов */
 
 .tabs {
-    min-width: 320px;
+    min-width: 280px;
     max-width: 64rem;
     padding: 0;
     margin: 0 auto;
