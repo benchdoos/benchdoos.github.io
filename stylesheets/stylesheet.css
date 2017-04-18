@@ -82,10 +82,11 @@ a:hover {
 }
 
 .SystemRequirements {
+    padding-right: 10px;
     display: inline-block;
-    color: rgba(255, 255, 255, 0.7);
+    color: #000000;
     background-color: rgba(168, 168, 168, 0.08);
-    border-color: rgba(124, 124, 124, 0.08);
+    border-color: #2793e6;
     border-style: solid;
     border-width: 1px;
     border-radius: 0.3rem;
