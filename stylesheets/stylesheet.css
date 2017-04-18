@@ -417,14 +417,14 @@ a:hover {
 
 @media screen and (max-width: 42em) {
     #youtubeDefault iframe {
-        width: 280px;
-        height: 157px;
+        width: 250px;
+        height: 140px;
     }
 }
 
 @media screen and (max-width: 320px) {
     #youtubeDefault iframe {
-        width: 280px;
-        height: 163px;
+        width: 250px;
+        height: 140px;
     }
 }
