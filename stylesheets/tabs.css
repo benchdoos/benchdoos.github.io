@@ -109,7 +109,7 @@ h1 {
 /* Базовый контейнер табов */
 
 .tabs {
-    min-width: 320px;
+    min-width: 280px;
     max-width: 64rem;
     padding: 0;
     margin: 0 auto;
@@ -197,11 +197,24 @@ h1 {
 }
 
 .tabs > label[for*="3"]:before {
-    content: "\f13b";
+    content: "\f17c";
 }
 
 .tabs > label[for*="4"]:before {
     content: "\f13c";
+}
+
+/* Цвет конкретных вкладок при выделении */
+.tabs > input:checked + label[for*="2"] {/*Windows*/
+    color: #00adef;
+}
+
+.tabs > input:checked + label[for*="3"] {/*Linux*/
+    color: black;
+}
+
+.tabs > input:checked + label[for*="4"] {/*MacOS*/
+    color: #969696;
 }
 
 /* Изменения стиля переключателей вкладок при наведении */
