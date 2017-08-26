@@ -242,6 +242,14 @@ h1 {
     display: block;
 }
 
+#tab1:checked ~ #content-tab1 .tab-div,
+#tab2:checked ~ #content-tab2 .tab-div,
+#tab3:checked ~ #content-tab3 .tab-div,
+#tab4:checked ~ #content-tab4 .tab-div{
+    max-height: 450px;
+    overflow-y: scroll;
+}
+
 /* Убираем текст с переключателей
 * и оставляем иконки на малых экранах
 */
