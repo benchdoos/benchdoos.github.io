@@ -13,7 +13,6 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/font-awesome.min.css"/>
 
 
-
     <script src="libs/jquery.min.js"></script>
     <script>$.get('https://api.github.com/repos/benchdoos/WeblocOpener/releases/latest', function (data) {
         $('#result').attr('href', data.assets[0].browser_download_url);
@@ -21,42 +20,59 @@
     <!-- Yandex.Metrika counter -->
     <script type="text/javascript">
         (function (d, w, c) {
-            (w[c] = w[c] || []).push(function() {
+            (w[c] = w[c] || []).push(function () {
                 try {
                     w.yaCounter41811549 = new Ya.Metrika({
-                        id:41811549,
-                        clickmap:true,
-                        trackLinks:true,
-                        accurateTrackBounce:true,
-                        webvisor:true
+                        id: 41811549,
+                        clickmap: true,
+                        trackLinks: true,
+                        accurateTrackBounce: true,
+                        webvisor: true
                     });
-                } catch(e) { }
+                } catch (e) {
+                }
             });
 
             var n = d.getElementsByTagName("script")[0],
                 s = d.createElement("script"),
-                f = function () { n.parentNode.insertBefore(s, n); };
+                f = function () {
+                    n.parentNode.insertBefore(s, n);
+                };
             s.type = "text/javascript";
             s.async = true;
             s.src = "https://mc.yandex.ru/metrika/watch.js";
 
             if (w.opera == "[object Opera]") {
                 d.addEventListener("DOMContentLoaded", f, false);
-            } else { f(); }
+            } else {
+                f();
+            }
         })(document, window, "yandex_metrika_callbacks");
     </script>
-    <noscript><div><img src="https://mc.yandex.ru/watch/41811549" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <noscript>
+        <div><img src="https://mc.yandex.ru/watch/41811549" style="position:absolute; left:-9999px;" alt=""/></div>
+    </noscript>
     <!-- /Yandex.Metrika counter -->
 
     <!-- Pool -->
-    <script>(function(i,s,o,g,r,a,m){i['QP']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//scripts.poll-maker.com/3012/pollembed.js','qp');</script>
+    <script>(function (i, s, o, g, r, a, m) {
+        i['QP'] = r;
+        i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+        a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//scripts.poll-maker.com/3012/pollembed.js', 'qp');</script>
     <!-- /Pool -->
 
 </head>
 <body>
 <section class="page-header">
     <h1 class="project-name">WeblocOpener</h1>
-    <h2 class="project-tagline">Open <i class="fa fa-apple" aria-hidden="true"></i> MacOS Safari <code>.webloc</code> link-files on <i class="fa fa-windows" aria-hidden="true"></i> Windows</h2>
+    <h2 class="project-tagline">Open <i class="fa fa-apple" aria-hidden="true"></i> MacOS Safari <code>.webloc</code>
+        link-files on <i class="fa fa-windows" aria-hidden="true"></i> Windows</h2>
     <a href="https://vk.cc/6wK9bM" class="btn">View on GitHub</a>
 
 
@@ -72,40 +88,59 @@
         <a id="weblocopener" class="anchor" href="#weblocopener" aria-hidden="true">
             <span aria-hidden="true" class="octicon octicon-link"></span></a>WeblocOpener
     </h1>-->
-    <a href="http://t.me/bench_doos" style="float:right; padding-left: 10px;" title="Telegram: Contact me fast! @bench_doos" ><img src="img/telegram-icon-128.png" style="height: 18px;"/></a>
+    <a href="http://t.me/bench_doos" style="float:right; padding-left: 10px;"
+       title="Telegram: Contact me fast! @bench_doos"><img src="img/telegram-icon-128.png" style="height: 18px;"/></a>
     <a href="mailto:weblocopener@gmail.com?subject=WeblocOpener feedback
     &body=Type here your question / problem, I try to help you as soon as it is possible!
     %0AYou can attach log files (see WeblocOpener - Settings -> About -> Log folder -> zip log folder -> attach).
 %0ADon't forget to close the application before zipping logs;)" style="float:right;"
        title="E-MAIL: Leave a feedback to help me to improve the application!">Feedback</a>
 
-    <img src="img/linux_logo_windows.png" style="float:left; padding-right: 15px; padding-bottom: 90px; /* filter: grayscale(100%); -webkit-filter: grayscale(100%);*/"/>
+    <img src="img/linux_logo_windows.png"
+         style="float:left; padding-right: 15px; padding-bottom: 90px; /* filter: grayscale(100%); -webkit-filter: grayscale(100%);*/"/>
     <h2 style="float:inherit;">
-        <a class="anchor" href="#introduction" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Linux is coming... or not?
+        <a class="anchor" href="#introduction" aria-hidden="true"><span aria-hidden="true"
+                                                                        class="octicon octicon-link"></span></a>Linux is
+        coming... or not?
     </h2>
     <div style="padding-left:15px; /*display: table; */ font-size:14px">
         <p>Hello! I think you have noticed that version for UNIX doesn't release for a long time,
-        so I want to share with you some thoughts about this.</p>
-        <p><span style="color: #4f7ece"><i class="fa fa-check" aria-hidden="true"></i>&nbsp;</span>I got some troubles with auto-update tool on Unix systems, because the power of my laptop doesn't give too enough performance to run and develop the same time on Windows and Ubuntu.</p>
-        <p><span style="color: #4f7ece"><i class="fa fa-question" aria-hidden="true"></i>&nbsp;</span>But the main app is working. Should I release Unix version without auto-update tool? Yes and no.
-            First of all the availability of the application allows you to open webloc links on UNIX systems. But on other side if there are some mistakes and intruders will find how to use the application to the detriment of users (is it possible? :D) it would be not a pleasant thing.
-        Auto-updater tool will help you to update your application in time, so the risk goes to minimum.</p>
-	<p><span style="color: #4f7ece"><i class="fa fa-windows" aria-hidden="true"></i>&nbsp;</span>Now changed orientation to stability improvements. Now auto-update tool works more stable. Unfortunately I didn't make download continuing, is there any sense to improve it for 8mb-12mb update?</p>
-	<p><span style="color: #4f7ece"><i class="fa fa-apple" aria-hidden="true"></i>&nbsp;</span>As for MacOS I still have some interesting ideas that I want to improve. Comming back to hackintosh make me fill excitement by two reasons:
-    <ul style="padding-left: 15px; list-style-type:decimal">
-        <li>
-            MacOS is my fave system
+            so I want to share with you some thoughts about this.</p>
+        <p><span style="color: #4f7ece"><i class="fa fa-check" aria-hidden="true"></i>&nbsp;</span>I got some troubles
+            with auto-update tool on Unix systems, because the power of my laptop doesn't give too enough performance to
+            run and develop the same time on Windows and Ubuntu.</p>
+        <p><span style="color: #4f7ece"><i class="fa fa-question" aria-hidden="true"></i>&nbsp;</span>But the main app
+            is working. Should I release Unix version without auto-update tool? Yes and no.
+            First of all the availability of the application allows you to open webloc links on UNIX systems. But on
+            other side if there are some mistakes and intruders will find how to use the application to the detriment of
+            users (is it possible? :D) it would be not a pleasant thing.
+            Auto-updater tool will help you to update your application in time, so the risk goes to minimum.</p>
+        <p><span style="color: #4f7ece"><i class="fa fa-windows" aria-hidden="true"></i>&nbsp;</span>Now changed
+            orientation to stability improvements. Now auto-update tool works more stable. Unfortunately I didn't make
+            download continuing, is there any sense to improve it for 8mb-12mb update?</p>
+        <p><span style="color: #4f7ece"><i class="fa fa-apple" aria-hidden="true"></i>&nbsp;</span>As for MacOS I still
+            have some interesting ideas that I want to improve. Comming back to hackintosh make me fill excitement by
+            two reasons:
+            <ul style="padding-left: 15px; list-style-type:decimal">
+                <li>
+                    MacOS is my fave system
+                </li>
+                <li>
+        <p>Hackintosh doesn't work properly now on my old laptop.</p>
         </li>
-        <li>
-            <p>Hackintosh doesn't work properly now on my old laptop.</p>
-        </li>
-    </ul>
+        </ul>
         </p>
-        <p><span style="color: #4f7ece"><i class="fa fa-question-circle" aria-hidden="true"></i>&nbsp;</span>So now I can go in improvements on Windows, making new features or to go in development of Unix-oriented systems.
-            In any reason I guess 100% I will develop version for MacOS with important abilities that OS does not provide. As for Unix - there is a question: should I develop it at all? At least auto-updater tool and full support?</p>
-        <p><span style="color: #4f7ece"><i class="fa fa-telegram" aria-hidden="true"></i>&nbsp;</span>Stay tuned. Subscribe on telegram <a href="https://t.me/WeblocOpener">WeblocOpener channel</a>. Feedback about the application directly to me in telegram: <a href="http://t.me/bench_doos">@bench_doos</a></p>
+        <p><span style="color: #4f7ece"><i class="fa fa-question-circle" aria-hidden="true"></i>&nbsp;</span>So now I
+            can go in improvements on Windows, making new features or to go in development of Unix-oriented systems.
+            In any reason I guess 100% I will develop version for MacOS with important abilities that OS does not
+            provide. As for Unix - there is a question: should I develop it at all? At least auto-updater tool and full
+            support?</p>
+        <p><span style="color: #4f7ece"><i class="fa fa-telegram" aria-hidden="true"></i>&nbsp;</span>Stay tuned.
+            Subscribe on telegram <a href="https://t.me/WeblocOpener">WeblocOpener channel</a>. Feedback about the
+            application directly to me in telegram: <a href="http://t.me/bench_doos">@bench_doos</a></p>
     </div>
-    <br><a href='https://www.survey-maker.com' poll='1850674x09DB6112-49' style='width:100%; display:block; text-align:right; font-size: 10px;'>SurveyMaker</a>
+    <br><a href='https://www.survey-maker.com' poll='1850674x09DB6112-49'
+           style='width:100%; display:block; text-align:right; font-size: 10px;'>SurveyMaker</a>
     <br>
     <h2 style="margin-top:0;">
         <a id="introduction" class="anchor" href="#introduction" aria-hidden="true"><span aria-hidden="true"
@@ -120,7 +155,7 @@
             <ul>
                 <li><b>Operating system:</b></li>
                 <li><i class="fa fa-windows" aria-hidden="true"></i> Windows XP (SP3), Vista, 7, 8, 10</li>
-		    <li><i class="fa fa-linux" aria-hidden="true"></i> In development</li>
+                <li><i class="fa fa-linux" aria-hidden="true"></i> In development</li>
                 <li><b>CPU:</b></li>
                 <li><i class="fa fa-microchip" aria-hidden="true"></i> Pentium 2 266MHz or better</li>
                 <li><b>Memory:</b></li>
@@ -129,7 +164,8 @@
                 <li><i class="fa fa-hdd-o" aria-hidden="true"></i> 25 MB free hard disk space</li>
                 <br>
                 <li><b>Additional software:</b></li>
-                <li><i class="fa fa-server" aria-hidden="true"></i> Java 8 required - <a href="https://java.com/download/">Download</a></li>
+                <li><i class="fa fa-server" aria-hidden="true"></i> Java 8 required - <a
+                        href="https://java.com/download/">Download</a></li>
             </ul>
         </div>
     </div>
@@ -141,7 +177,9 @@
 
     <ul>
         <li>Get full access to MacOS Safari <code>.webloc</code> link-files on Windows: open, edit and create.</li>
-	    <li>Created files does not differ from MacOS original files, that means <code>.webloc</code> files, created by WeblocOpener can be opened in MacOS Safari without any problems.</li>
+        <li>Created files does not differ from MacOS original files, that means <code>.webloc</code> files, created by
+            WeblocOpener can be opened in MacOS Safari without any problems.
+        </li>
         <li>Easy to install and easy to use.</li>
         <li>Easy to update with auto-update app.
             Updater will help you to find out when new version is available, download and install the update.
@@ -162,92 +200,174 @@
         So that's why this application was created - for these users.</p>
     <br>
     <div class="tabs">
-        <input id="tab1" type="radio" name="tabs">
-        <label for="tab1" title="Wordpress">Have questions?</label>
-        <input id="tab2" type="radio" name="tabs" checked>
+        <input id="tab1" type="radio" name="tabs" checked>
+        <label for="tab1" title="HaveQuestions">Have questions?</label>
+        <input id="tab2" type="radio" name="tabs">
         <label for="tab2" title="Windows">Windows</label>
         <input id="tab3" type="radio" name="tabs">
         <label for="tab3" title="Linux">Linux</label>
         <!-- <input id="tab4" type="radio" name="tabs">
         <label for="tab4" title="CSS3">CSS3</label>-->
         <section id="content-tab1">
-            What is WeblocOpener? And how to work with it? Greeting video is available down below <i class="fa fa-level-down" aria-hidden="true"></i>
-            <br><br>
-            <p id="youtubeDefault">
-            <iframe width="800" height="450"
-                    src="https://www.youtube.com/embed/Z-bT-VWMDsQ" frameborder="0" allowfullscreen></iframe></p>
+            <div style="overflow-y: scroll; max-height: 450px;">
+                <p style="text-align: center; padding:10px 0 10px 0; font-size: 25px; color: #4f7ece;"><b>What can do WeblocOpener?</b></p>
+
+                <ul class="faq">
+
+                    <li>
+                        Open MacOS Safari <code>.webloc</code> link on Windows on your default browser.
+                        <img src="img/faq/faq_1.png"/>
+                    </li>
+
+                    <li>
+                        Open <code>.webloc</code> files.
+                        <img src="img/faq/faq_2.png"/>
+                    </li>
+
+                    <!--<li>
+                        Choose not default browser to open URL.
+                        <img src="img/faq/faq_3.png"/>
+                    </li>-->
+
+                    <li>
+                        Create new <code>.webloc</code> files. Created files are fully supported by Safari on MacOS and
+                        WeblocOpener on Windows.
+                        <img src="img/faq/faq_4.png"/>
+                    </li>
+
+                    <li>
+                        Edit created files. Unlike <code>.webloc</code> files on MacOS that can not be edited by default
+                        (except for text editors), WeblocOpener provides the ability to edit <code>.webloc</code> files on
+                        Windows.
+                        <img src="img/faq/faq_5.png"/>
+                    </li>
+
+                    <li>
+                        Auto-paste URL from clipboard when you created a new file. When you've just created an empty file,
+                        WeblocOpener helps you to paste copied URL into ULR-field. It automatically finds an URL in your
+                        clipboard.
+                        <img src="img/faq/faq_6.png"/>
+                    </li>
+
+                    <li>
+                        Auto-update tool will help you receive new updates just from the server. You should not check, if
+                        there is an update, WeblocOpener updater will notify you if there is a new version of the app.
+                        <img src="img/faq/faq_7.png"/>
+                    </li>
+
+                    <li>
+                        Find out, what's new in new update. Use info icon on Updater to check it out.
+                        <img src="img/faq/faq_8.png"/>
+                    </li>
+                </ul>
+
+                <br>
+
+                What is WeblocOpener? And how to work with it? Greeting video is available down below <i
+                    class="fa fa-level-down" aria-hidden="true"></i>
+                <br><br>
+                <p id="youtubeDefault" style="text-align: center;">
+                    <iframe width="740" height="416"
+                            src="https://www.youtube.com/embed/Z-bT-VWMDsQ" frameborder="0" allowfullscreen></iframe>
+                </p>
+            </div>
         </section>
         <section id="content-tab2">
-            <p>WeblocOpener for <i class="fa fa-windows" aria-hidden="true"></i> Windows is a simple application, that will help you to open <i class="fa fa-safari" aria-hidden="true"></i> Safari <code>.webloc</code> links on Windows.</p>
-            <p>WeblocOpener provides full support for this system, including: open, edit, create <code>.webloc</code> files.</p>
+            <p>WeblocOpener for <i class="fa fa-windows" aria-hidden="true"></i> Windows is a simple application, that
+                will help you to open <i class="fa fa-safari" aria-hidden="true"></i> Safari <code>.webloc</code> links
+                on Windows.</p>
+            <p>WeblocOpener provides full support for this system, including: open, edit, create <code>.webloc</code>
+                files.</p>
             <p>WeblocOpener provides ability to work with <code>.webloc</code> like on MacOS, even better.</p>
         </section>
         <section id="content-tab3">
-            <p>Linux version is in development!</p>
-            <p>WeblocOpener for Linux will be supported by most UNIX systems. Capability will be tested on Ubuntu 16.04.2 LTS and Debian 8.7.1.</p>
-	    <p>Stay tuned.</p>
+            <p>Linux version is now frozen.</p>
+            <!--<p>WeblocOpener for Linux will be supported by most UNIX systems. Capability will be tested on Ubuntu 16.04.2 LTS and Debian 8.7.1.</p>-->
+            <p>Stay tuned.</p>
         </section>
         <section id="content-tab4">
-            <p> Спецификация CSS3 — это неоспоримое будущее в области декоративного оформления веб-страниц, и ее разработка еще далека от завершения. Большинство модулей все еще продолжает совершенствоваться и модифицироваться, и ни один браузер не поддерживает все модули. Это означает, что CSS3 испытывает такие же сложности, как и HTML5. Веб-разработчикам нужно решать, какие возможности использовать, а какие игнорировать, а также каким образом заполнить зияющие пробелы в браузерной поддержке. </p>
-            <p> CSS3 не является частью спецификации HTML5. Эти два стандарта были разработаны отдельно друг от друга, разными людьми, работающими в разное время в различных местах. Но даже организация W3C призывает веб-разработчиков использовать HTML5 и CSS3 вместе, как часть одной новой волны современного веб-дизайна. </p>
+            <p> Спецификация CSS3 — это неоспоримое будущее в области декоративного оформления веб-страниц, и ее
+                разработка еще далека от завершения. Большинство модулей все еще продолжает совершенствоваться и
+                модифицироваться, и ни один браузер не поддерживает все модули. Это означает, что CSS3 испытывает такие
+                же сложности, как и HTML5. Веб-разработчикам нужно решать, какие возможности использовать, а какие
+                игнорировать, а также каким образом заполнить зияющие пробелы в браузерной поддержке. </p>
+            <p> CSS3 не является частью спецификации HTML5. Эти два стандарта были разработаны отдельно друг от друга,
+                разными людьми, работающими в разное время в различных местах. Но даже организация W3C призывает
+                веб-разработчиков использовать HTML5 и CSS3 вместе, как часть одной новой волны современного
+                веб-дизайна. </p>
         </section>
     </div>
-	<br>
+    <br>
     <h2>
         <a id="supported-features" class="anchor" href="#supported-features" aria-hidden="true"><span
                 aria-hidden="true" class="octicon octicon-link"></span></a>Supported features</h2>
-	<table>
-		<thead style="background-color: #eaf5ff;">
-			<tr>
-				<th>Feature</th>
-				<th align="center" style="color: #4f7ece;"><i class="fa fa-windows" aria-hidden="true"></i> Windows</th>
-				<th align="center" style="color: black;"><i class="fa fa-linux" aria-hidden="true"></i> UNIX</th>
-				<th align="center" style="color: #888888;"><i class="fa fa-apple" aria-hidden="true"></i> MacOS</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<td>Open</td>
-				<td align="center" style="color: green;"><i class="fa fa-check" aria-hidden="true"></i></td>
-				<td align="center" style="color: orange;">In development</td>
-				<td align="center" style="color: orange;">Safari only</td>
-			</tr>
-				<tr>
-				<td>Edit</td>
-				<td align="center" style="color: green;"><i class="fa fa-check" aria-hidden="true"></i></td>
-				<td align="center" style="color: orange;">In development</td>
-				<td align="center" style="color: red;"><i class="fa fa-times" aria-hidden="true"></i></td>
-			</tr>
-				<tr>
-				<td>Create new</td>
-				<td align="center" style="color: green;"><i class="fa fa-check" aria-hidden="true"></i></td>
-				<td align="center" style="color: orange;">In development</td>
-				<td align="center">Default</td>
-			</tr>
-			<tr>
-				<td>URL auto-paste</td>
-				<td align="center" style="color: green;"><i class="fa fa-check" aria-hidden="true"></i></td>
-				<td align="center" style="color: orange;">In development</td>
-				<td align="center">WO feature</td>
-			</tr>
-			<tr>
-				<td>Auto-update</td>
-				<td align="center" style="color: green;"><i class="fa fa-check" aria-hidden="true"></i></td>
-				<td align="center" style="color: orange;">In development</td>
-				<td align="center">WO feature</td>
-			</tr>
-			<tr>
-				<td>Open in not default browser</td>
-				<td align="center" style="color: red;"><i class="fa fa-times" aria-hidden="true"></i></td>
-				<td align="center" style="color: red;"><i class="fa fa-times" aria-hidden="true"></i></td>
-				<td align="center" style="color: red;"><i class="fa fa-times" aria-hidden="true"></i></td>
-			</tr>
-		</tbody>
-	</table>
+    <table>
+        <thead style="background-color: #eaf5ff;">
+        <tr>
+            <th>Feature</th>
+            <th align="center" style="color: #4f7ece;"><i class="fa fa-windows" aria-hidden="true"></i> Windows</th>
+            <th align="center" style="color: black;"><i class="fa fa-linux" aria-hidden="true"></i> UNIX</th>
+            <th align="center" style="color: #888888;"><i class="fa fa-apple" aria-hidden="true"></i> MacOS</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Open</td>
+            <td align="center" style="color: green;"><i class="fa fa-check" aria-hidden="true" title="Supported"></i>
+            </td>
+            <td align="center" style="color: deepskyblue;"><i class="fa fa-snowflake-o" aria-hidden="true"
+                                                              title="Frozen"></i></td>
+            <td align="center" style="color: orange;">Safari only</td>
+        </tr>
+        <tr>
+            <td>Edit</td>
+            <td align="center" style="color: green;"><i class="fa fa-check" aria-hidden="true" title="Supported"></i>
+            </td>
+            <td align="center" style="color: deepskyblue;"><i class="fa fa-snowflake-o" aria-hidden="true"
+                                                              title="Frozen"></i></td>
+            <td align="center" style="color: red;"><i class="fa fa-times" aria-hidden="true"></i></td>
+        </tr>
+        <tr>
+            <td>Create new</td>
+            <td align="center" style="color: green;"><i class="fa fa-check" aria-hidden="true" title="Supported"></i>
+            </td>
+            <td align="center" style="color: deepskyblue;"><i class="fa fa-snowflake-o" aria-hidden="true"
+                                                              title="Frozen"></i></td>
+            <td align="center">Default</td>
+        </tr>
+        <tr>
+            <td>URL auto-paste</td>
+            <td align="center" style="color: green;"><i class="fa fa-check" aria-hidden="true" title="Supported"></i>
+            </td>
+            <td align="center" style="color: deepskyblue;"><i class="fa fa-snowflake-o" aria-hidden="true"
+                                                              title="Frozen"></i></td>
+            <td align="center">WO feature</td>
+        </tr>
+        <tr>
+            <td>Auto-update</td>
+            <td align="center" style="color: green;"><i class="fa fa-check" aria-hidden="true" title="Supported"></i>
+            </td>
+            <td align="center" style="color: deepskyblue;"><i class="fa fa-snowflake-o" aria-hidden="true"
+                                                              title="Frozen"></i></td>
+            <td align="center">WO feature</td>
+        </tr>
+        <tr>
+            <td>Open in not default browser</td>
+            <td align="center" style="color: orange;"><i class="fa fa-dot-circle-o" aria-hidden="true"
+                                                         title="In development"></i></td>
+            <td align="center" style="color: deepskyblue;"><i class="fa fa-snowflake-o" aria-hidden="true"
+                                                              title="Frozen"></i></td>
+            <td align="center" style="color: red;"><i class="fa fa-times" aria-hidden="true"></i></td>
+        </tr>
+        </tbody>
+    </table>
 
     <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/benchdoos/WeblocOpener">WeblocOpener</a> is maintained by <a
-                href="https://github.com/benchdoos">benchdoos</a> (Eugene Zrazhevsky). <a href="mailto:weblocopener@gmail.com" title="Send e-mail to me.">Contact me!</a>&nbsp;&nbsp;<a href="http://t.me/bench_doos" title="Telegram: Contact me fast! @bench_doos" ><img src="img/telegram-icon-128.png" style="height: 18px;"/></a></span>
+                href="https://github.com/benchdoos">benchdoos</a> (Eugene Zrazhevsky). <a
+                href="mailto:weblocopener@gmail.com" title="Send e-mail to me.">Contact me!</a>&nbsp;&nbsp;<a
+                href="http://t.me/bench_doos" title="Telegram: Contact me fast! @bench_doos"><img
+                src="img/telegram-icon-128.png" style="height: 18px;"/></a></span>
 
         <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a
                 href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a
@@ -258,31 +378,38 @@
 <!-- Yandex.Metrika counter -->
 <script type="text/javascript">
     (function (d, w, c) {
-        (w[c] = w[c] || []).push(function() {
+        (w[c] = w[c] || []).push(function () {
             try {
                 w.yaCounter41811549 = new Ya.Metrika({
-                    id:41811549,
-                    clickmap:true,
-                    trackLinks:true,
-                    accurateTrackBounce:true,
-                    webvisor:true
+                    id: 41811549,
+                    clickmap: true,
+                    trackLinks: true,
+                    accurateTrackBounce: true,
+                    webvisor: true
                 });
-            } catch(e) { }
+            } catch (e) {
+            }
         });
 
         var n = d.getElementsByTagName("script")[0],
             s = d.createElement("script"),
-            f = function () { n.parentNode.insertBefore(s, n); };
+            f = function () {
+                n.parentNode.insertBefore(s, n);
+            };
         s.type = "text/javascript";
         s.async = true;
         s.src = "https://mc.yandex.ru/metrika/watch.js";
 
         if (w.opera == "[object Opera]") {
             d.addEventListener("DOMContentLoaded", f, false);
-        } else { f(); }
+        } else {
+            f();
+        }
     })(document, window, "yandex_metrika_callbacks");
 </script>
-<noscript><div><img src="https://mc.yandex.ru/watch/41811549" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<noscript>
+    <div><img src="https://mc.yandex.ru/watch/41811549" style="position:absolute; left:-9999px;" alt=""/></div>
+</noscript>
 <!-- /Yandex.Metrika counter -->
 </body>
 </html>
