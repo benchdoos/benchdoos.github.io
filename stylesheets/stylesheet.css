@@ -283,6 +283,7 @@ a:hover {
 
 .main-content ul, .main-content ol {
     margin-top: 0;
+    padding-left: 20px;
 }
 
 .main-content blockquote {
