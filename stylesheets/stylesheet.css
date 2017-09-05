@@ -445,6 +445,10 @@ a:hover {
     }
 }
 
+.download_count_class {
+    font-size: 10px;
+}
+
 .faq {
     font-weight: bold;
     padding-left: 40px;
