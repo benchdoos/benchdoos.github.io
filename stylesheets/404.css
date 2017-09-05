@@ -15,6 +15,35 @@ div {
     text-transform: uppercase;
     text-shadow: 0 0 80px red, 0 0 30px FireBrick, 0 0 6px DarkRed;
     color: red;
+    cursor: default;
+}
+
+@media screen and (min-width: 42em) and (max-width: 64em){
+    div{
+        padding: 30px;
+        -ms-transform: scale(0.9,0.9); /* IE 9 */
+        -webkit-transform: scale(0.9,0.9); /* Safari */
+        transform: scale(0.9,0.9); /* Standard syntax */
+    }
+}
+
+@media screen and (max-width: 42em) {
+    div{
+        padding: 20px;
+        -ms-transform: scale(0.8,0.8); /* IE 9 */
+        -webkit-transform: scale(0.8,0.8); /* Safari */
+        transform: scale(0.8,0.8); /* Standard syntax */
+    }
+}
+
+@media screen and (max-width: 32em) {
+    div{
+        padding: 0;
+        margin-left: -10px;
+        -ms-transform: scale(0.6,0.6); /* IE 9 */
+        -webkit-transform: scale(0.6,0.6); /* Safari */
+        transform: scale(0.6,0.6); /* Standard syntax */
+    }
 }
 
 div p {
