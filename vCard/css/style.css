@@ -1,0 +1,90 @@
+/*-----Делаем фон нашего-----*/
+body {
+    background: #E6E6E6;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+a {
+    color: gray;
+}
+
+/*-----Главный контейнер-----*/
+.wrap {
+    /*margin: 20% auto; /* Делаем визитку по центру страницы */
+    margin: auto; /* Делаем визитку по центру страницы */
+    width: 500px; /* Ширина визитки */
+    height: 200px; /* Высота визитки */
+    padding: 30px; /* Внутренние отступы для красоты */
+    background: #FFFFFF; /* Фон визитки, в данном случае - белый */
+    /*
+    3 строчки ниже это тень вокруг визитки
+    Каждая строчка для разных браузеров, использование этих
+    строк делает тень кроссбраузерной
+    */
+    -webkit-box-shadow: 0 0 30px 0 rgba(50, 50, 50, 1);
+    -moz-box-shadow: 0 0 30px 0 rgba(50, 50, 50, 1);
+    box-shadow: 0 0 30px 0 rgba(50, 50, 50, 1);
+    /*
+    Так же 3 строчки для обеспечения кроссбраузерности
+    свойства закругленных углов
+    */
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+
+}
+
+/*-----Стили логотипа-----*/
+.wrap img {
+    vertical-align: middle; /* Для отображения описания по центру от изображения */
+    width: 150px;
+}
+
+/*-----Разделяющая линия-----*/
+.wrap hr {
+    margin-top: 20px; /* Делаем отступ сверху для линии */
+}
+
+/*-----Блок с описанием компании-----*/
+.name {
+    font-size: 18px; /* Размер шрифта */
+    font-weight: 900; /* Жирность шрифта */
+    font-style: italic; /* Наклон шрифта */
+}
+
+.eng_name {
+    font-size: 14px;
+    font-style: italic; /* Наклон шрифта */
+}
+
+/*-----Блок основной информации-----*/
+.main_info {
+    margin-left: 100px; /* Отступ слева(от изображения) */
+    margin-top: 20px;
+}
+
+/*-----Блок со ссылкой на сайт-----*/
+.phone {
+    font-weight: 900;
+    font-size: 16px;
+}
+
+.mail {
+    font-size: 16px;
+}
+
+.telegram a {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    text-decoration: none;
+    color: initial;
+    padding: 5px;
+    float: right;
+}
