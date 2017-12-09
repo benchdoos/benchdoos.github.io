@@ -1,7 +1,7 @@
 @media screen and (min-device-width: 320px) and (max-device-width: 568px) {
     .wrap {
         width: 90%;
-        height: 90%;
+        height: 100%;
     }
 
     .wrap img {
@@ -37,7 +37,7 @@
     .wrap {
         margin: auto;
         width: 90%; /* Ширина визитки */
-        height: 90%; /* Высота визитки */
+        height: 100%; /* Высота визитки */
     }
 
     .wrap img {
