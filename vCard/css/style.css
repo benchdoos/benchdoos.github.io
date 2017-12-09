@@ -38,6 +38,8 @@ a {
 .wrap img {
     vertical-align: middle; /* Для отображения описания по центру от изображения */
     width: 150px;
+    float: left;
+    margin-right: 60px;
 }
 
 /*-----Разделяющая линия-----*/
@@ -90,4 +92,9 @@ a.button {
 
 #HR_ {
     margin-top: 50px;
+}
+
+#qrcode {
+    width: 32px;
+
 }
