@@ -8,7 +8,7 @@
 <BODY>
 <!--Общий контейнер, в который мы обертываем все остальные-->
 <div class="wrap">
-    <img src="img/photo.png" style="float: left; margin-right: 60px;">
+    <img id="photo" src="img/photo.png" style="float: left; margin-right: 60px;">
 
     <div class="main_info">
         <span class="name">Евгений Зражевский</span><br>
@@ -29,8 +29,41 @@
     <br/>
 
     <hr style="float: none;"/>
+    <button id="change" onclick="qr()" style="border: none; padding: 0"><img id="qrcode" src="img/qr.png" style="width: 32px"></button>
     <a href="eugene_zrazhevsky.vcf" class="button">Импортировать</a>
 
 </div>
+<script>
+    var pic = document.getElementById('photo');
+    var pho = document.getElementById('qrcode');
+    var counter = 1;
+
+    function photo() {
+        pic.src = "img/photo.png";
+        pho.src = "img/qr.png";
+    }
+    function qr() {
+
+        pic.src = "img/qr.png";
+        pho.src = "img/photo.png";
+    }
+
+    function say() {
+        console.log("hello");
+    }
+
+    function change() {
+        console.log("changing counter to: " + counter + 1)
+        if (counter % 2 === 1) {
+            qr();
+        } else {
+            photo();
+        }
+        counter++;
+    }
+
+    document.getElementById('change').addEventListener('click', change);
+
+</script>
 </BODY>
 </HTML>
