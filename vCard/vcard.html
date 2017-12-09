@@ -3,6 +3,7 @@
     <TITLE>Евгений Зражевский - Как со мной связаться?</TITLE>
     <!--В данном примере, нам понадобятся только CSS стили-->
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/mobile.css">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <link rel="icon" href="img/photo.png" type="image/gif" sizes="16x16">
 </HEAD>
@@ -18,19 +19,17 @@
             <a href="tel:+79385501231">+7 (938) 550-12-31</a>
         </span><br>
 
-        <span class="mail">E-mail:
+        <span class="mail"><span>E-mail:</span>
             <strong><i><a href="mailto:eugeny.zrazhevky@gmail.com">eugeny.zrazhevky@gmail.com</a></i></strong>
         </span>
 
-        <span class="telegram">Telegram: <a href="https://t.me/bench_doos">https://t.me/bench_doos</a> </span>
+        <span class="telegram"><span>Telegram: </span><a href="https://t.me/bench_doos">https://t.me/bench_doos</a></span>
 
 
     </div>
-    <br/>
-    <br/>
-
-    <hr style="float: none;"/>
-    <button id="change" onclick="qr()" style="border: none; padding: 0"><img id="qrcode" src="img/qr.png" style="width: 32px"></button>
+    <hr id="HR_" />
+    <button id="change" onclick="qr()" style="border: none; padding: 0"><img id="qrcode" src="img/qr.png"
+                                                                             style="width: 32px"></button>
     <a href="eugene_zrazhevsky.vcf" class="button">Импортировать</a>
 
 </div>
@@ -43,18 +42,14 @@
         pic.src = "img/photo.png";
         pho.src = "img/qr.png";
     }
+
     function qr() {
 
         pic.src = "img/qr.png";
         pho.src = "img/photo.png";
     }
 
-    function say() {
-        console.log("hello");
-    }
-
     function change() {
-        console.log("changing counter to: " + counter + 1)
         if (counter % 2 === 1) {
             qr();
         } else {

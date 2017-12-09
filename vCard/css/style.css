@@ -59,7 +59,6 @@ a {
 
 /*-----Блок основной информации-----*/
 .main_info {
-    margin-left: 100px; /* Отступ слева(от изображения) */
     margin-top: 20px;
 }
 
@@ -87,4 +86,8 @@ a.button {
     color: initial;
     padding: 5px;
     float: right;
+}
+
+#HR_ {
+    margin-top: 50px;
 }

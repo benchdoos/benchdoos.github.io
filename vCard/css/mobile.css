@@ -1,0 +1,47 @@
+@media screen and (min-width: 500px) and (max-width: 640px) {
+    .wrap {
+        width: 540px
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 500px) {
+    .wrap {
+        width: 340px;
+        height: 130px;
+    }
+
+    .wrap img {
+        width: 80px;
+    }
+
+    .main_info {
+        margin-top: 0;
+    }
+
+    .main_info .mail {
+        font-size: 14px;
+    }
+
+    .main_info .mail span {
+        display: none
+    }
+
+    .main_info .telegram a {
+        font-size: 14px;
+    }
+
+    .main_info .telegram span {
+        display: none
+    }
+
+    #HR_ {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .wrap {
+        width: 220px;
+        height: 130px;
+    }
+}
