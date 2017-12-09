@@ -33,7 +33,8 @@
     }
 }
 
-@media screen  and (min-device-width: 200px) and (max-device-width: 320px) {
+@media screen  and (min-device-width: 200px) and (max-device-width: 320px)
+and (min-width: 200px) and (max-width: 320px){
     .wrap {
         margin: auto;
         width: 90%; /* Ширина визитки */
@@ -70,7 +71,12 @@
     }
 
     #qrcode {
-        width: 256px !important;
+        width: 100px;
+    }
+
+    #change {
+        width: 100px;
+        height: 100px;
     }
 
 }

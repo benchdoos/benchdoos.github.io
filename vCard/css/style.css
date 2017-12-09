@@ -51,7 +51,7 @@ a {
 .name {
     font-size: 18px; /* Размер шрифта */
     font-weight: 900; /* Жирность шрифта */
-    font-style: italic; /* Наклон шрифта */
+    font-style: normal; /* Наклон шрифта */
 }
 
 .eng_name {
@@ -96,5 +96,8 @@ a.button {
 
 #qrcode {
     width: 32px;
+}
 
+#change {
+    width: 32px;
 }
