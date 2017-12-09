@@ -1,13 +1,7 @@
-@media screen and (min-width: 500px) and (max-width: 640px) {
+@media screen and (min-width: 320px) and (max-width: 640px) {
     .wrap {
-        width: 540px
-    }
-}
-
-@media screen and (min-width: 320px) and (max-width: 500px) {
-    .wrap {
-        width: 340px;
-        height: 130px;
+        width: 90%;
+        height: 200px;
     }
 
     .wrap img {
@@ -39,9 +33,13 @@
     }
 }
 
-@media screen and (max-width: 320px) {
-    .wrap {
-        width: 220px;
-        height: 130px;
+@media screen and (min-width: 0px) and ( max-width: 320px ) {
+    .wrap{
+        width: 100%; /* Ширина визитки */
+        height: 100%; /* Высота визитки */
+        padding: 0; /* Внутренние отступы для красоты */
+    }
+    .wrap img {
+        width: 90%;
     }
 }
