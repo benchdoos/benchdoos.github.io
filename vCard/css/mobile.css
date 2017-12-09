@@ -1,4 +1,4 @@
-@media screen and (min-device-width : 320px) and (max-device-width : 568px)  {
+@media screen and (min-device-width: 320px) and (max-device-width: 568px) {
     .wrap {
         width: 90%;
         height: 200px;
@@ -33,13 +33,40 @@
     }
 }
 
-@media screen and (min-width: 0px) and ( max-width: 320px ) {
-    .wrap{
-        width: 100%; /* Ширина визитки */
+@media screen  and (min-device-width: 200px) and (max-device-width: 568px) {
+    .wrap {
+        margin: auto;
+        width: 90%; /* Ширина визитки */
         height: 100%; /* Высота визитки */
-        padding: 0; /* Внутренние отступы для красоты */
     }
+
     .wrap img {
-        width: 90%;
+        width: 80%;
+        padding: 0;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        float: none !important;
     }
+
+    .main_info {
+        margin-top: 10px;
+    }
+    .main_info span {
+        font-size: 80px;
+    }
+    .main_info .mail, .main_info .telegram a {
+        font-size: 60px;
+    }
+
+    a.button {
+        font-size: 60px;
+    }
+    #HR_ {
+        margin-top: 10px;
+    }
+    #qrcode {
+        width: 256px !important;
+    }
+
 }
