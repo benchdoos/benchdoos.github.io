@@ -94,7 +94,7 @@
 </section>
 
 <section class="main-content">
-    <!--<p><img src="img/WeblocOpenerIntro.png" align="right" width="400" height="225"></p>-->
+
 
     <!--<h1 style="padding: 0;text-align: left;">
         <a id="weblocopener" class="anchor" href="#weblocopener" aria-hidden="true">
@@ -107,37 +107,16 @@
     %0AYou can attach log files (see WeblocOpener - Settings -> About -> Log folder -> zip log folder -> attach).
 %0ADon't forget to close the application before zipping logs;)" style="float:right;"
        title="E-MAIL: Leave a feedback to help me to improve the application!">Feedback</a>
-
-    <h2>[Supernova] Update v1.4 - What's new?</h2>
-    <p id="youtubeDefault" style="text-align: center;">
-        <!--width="740" height="416" -->
-        <iframe src="https://www.youtube.com/embed/soFOvvyd8Hs"
-                frameborder="0" allowfullscreen></iframe>
-    </p>
-    <p style="color: #4f7ece; font-size: 20px;">Browsers in preset:
-
-        <i id="browserList">
-            <i class="fa fa-chrome" aria-hidden="true" style="color:green;"></i>
-            <i class="fa fa-opera" aria-hidden="true" style="color:red;"></i>
-            <i class="fa fa-edge" aria-hidden="true" style="color:#0078d7;"></i>
-            <i class="fa fa-firefox" aria-hidden="true" style="color:orangered;"></i>
-            <i class="fa fa-internet-explorer" aria-hidden="true" style="color:dodgerblue;"></i>
-        </i>
-        &nbsp;or you can use your custom browser.
-    </p>
-    <!--<img src="img/1.4.png" width="300px" style="margin-right: 20px; text-align: left;">-->
-    <!--<ul style="left: 10px;position: relative; text-align: right;">-->
+    <!--<p><img src="img/versions/1.4.2.png" align="left" style="margin-right: 40px;"></p>
+    <h2>[Supernova] Update v1.4.2 - What's new?</h2>
+    &lt;!&ndash;<img src="img/1.4.png" width="300px" style="margin-right: 20px; text-align: left;">&ndash;&gt;
+    &lt;!&ndash;<ul style="left: 10px;position: relative; text-align: right;">&ndash;&gt;
     <ul>
-        <li>This update gives ability to change browser to open .webloc links.</li>
-        <li>You can use some preset browser (if it's installed) or call browser by your own with custom call.</li>
-        <li>Preset browsers have incognito (private) mode (most of them).</li>
-        <li>You can use any custom browser by using syntax:
-            <code><i style="color: black; font-weight: bold;">&lt;file_path&gt;</i> <i style="color: red;font-weight: bold;">%site</i></code>.
-        </li>
-        <li>Now info about update is move attractive and there is update name on top.</li>
+        <li>Done a lot of work under the hood. Now application is more stable and faster.</li>
+        <li>Now you can generate QR-Code by the right-click on <code>.webloc</code> file.</li>
     </ul>
 
-    <br><br>
+    <br><br>-->
     <h2 style="margin-top:0;">
         <a id="introduction" class="anchor" href="#introduction" aria-hidden="true"><span aria-hidden="true"
                                                                                           class="octicon octicon-link"></span></a>Introduction:
@@ -147,7 +126,7 @@
 
     <div class="SRRoot">
         <div class="SystemRequirements" align="left">
-            <p>System Requirements</p>
+            <p><b>System Requirements</b></p>
             <ul>
                 <li><b>Operating system:</b></li>
                 <li><i class="fa fa-windows" aria-hidden="true"></i> Windows XP (SP3), Vista, 7, 8, 10</li>
@@ -197,9 +176,9 @@
     <br>
     <div class="tabs">
         <input id="tab1" type="radio" name="tabs" checked>
-        <label for="tab1" title="HaveQuestions">Have questions?</label>
-        <input id="tab2" type="radio" name="tabs">
-        <label for="tab2" title="Windows">Windows</label>
+        <!--<label for="tab1" title="HaveQuestions">Have questions?</label>
+        <input id="tab2" type="radio" name="tabs">-->
+        <label for="tab1" title="Windows">Windows</label>
         <input id="tab3" type="radio" name="tabs">
         <label for="tab3" title="Linux">Linux</label>
         <!-- <input id="tab4" type="radio" name="tabs">
@@ -207,12 +186,13 @@
         <section id="content-tab1">
             <div class="tab-div">
                 <p style="text-align: center; padding:10px 0 10px 0; font-size: 25px; color: #4f7ece;"><b>What can do
-                    WeblocOpener?</b></p>
+                    WeblocOpener on Windows?</b></p>
 
-                <!--<p id="youtubeDefault" style="text-align: center;">
-                    <iframe width="740" height="416" src="https://www.youtube.com/embed/soFOvvyd8Hs"
+                <p id="youtubeDefault" style="text-align: center;">
+                    <!--width="740" height="416" -->
+                    <iframe src="https://www.youtube.com/embed/soFOvvyd8Hs"
                             frameborder="0" allowfullscreen></iframe>
-                </p>-->
+                </p>
 
 
                 <ul class="faq">
@@ -229,6 +209,19 @@
 
                     <li>
                         Choose not default browser to open URL. Open in browser from presets or use custom.
+                        <br>Browsers in preset:
+                        <br>
+                        <i id="browserList">
+                            <i class="fa fa-chrome" aria-hidden="true" style="color:green;"></i>
+                            <i class="fa fa-opera" aria-hidden="true" style="color:red;"></i>
+                            <i class="fa fa-edge" aria-hidden="true" style="color:#0078d7;"></i>
+                            <i class="fa fa-firefox" aria-hidden="true" style="color:orangered;"></i>
+                            <i class="fa fa-internet-explorer" aria-hidden="true" style="color:dodgerblue;"></i>
+                            <i>and more...</i>
+                        </i>
+                        &nbsp;or you can use your custom browser.
+                        <br>You can use any custom browser by your own with custom call, using syntax:
+                        <code><i style="color: black; font-weight: bold;">&lt;file_path&gt;</i> <i style="color: red;font-weight: bold;">%site</i></code>.
                         <img src="img/faq/faq_3.png"/>
                     </li>
 
@@ -245,6 +238,12 @@
                         Windows.
                         <img src="img/faq/faq_5.png"/>
                     </li>
+
+                    <!--<li>
+                        Generate QR-Code from <code>.webloc</code> context menu. Just make a right-click on a <code>.webloc</code>
+                        file and select &quot;Generate QR-Code&quot;. You can simply use it to open the link directly on your phone!
+                        <img src="img/faq/faq_qr.png"/>
+                    </li>-->
 
                     <li>
                         Auto-paste URL from clipboard when you created a new file. When you've just created an empty
@@ -365,15 +364,7 @@
             </div>
         </section>
         <section id="content-tab4">
-            <p> Спецификация CSS3 — это неоспоримое будущее в области декоративного оформления веб-страниц, и ее
-                разработка еще далека от завершения. Большинство модулей все еще продолжает совершенствоваться и
-                модифицироваться, и ни один браузер не поддерживает все модули. Это означает, что CSS3 испытывает такие
-                же сложности, как и HTML5. Веб-разработчикам нужно решать, какие возможности использовать, а какие
-                игнорировать, а также каким образом заполнить зияющие пробелы в браузерной поддержке. </p>
-            <p> CSS3 не является частью спецификации HTML5. Эти два стандарта были разработаны отдельно друг от друга,
-                разными людьми, работающими в разное время в различных местах. Но даже организация W3C призывает
-                веб-разработчиков использовать HTML5 и CSS3 вместе, как часть одной новой волны современного
-                веб-дизайна. </p>
+            <p> in development... </p>
         </section>
     </div>
     <br>
@@ -417,6 +408,16 @@
             <td align="center" style="color: green;"><i class="fa fa-check" aria-hidden="true" title="Supported"></i>
             </td>
         </tr>
+        <!--<tr>
+            <td>Generate QR-Code</td>
+            &lt;!&ndash;<td align="center" style="color: orange;"><i class="fa fa-dot-circle-o" aria-hidden="true"
+                                                         title="In development"></i></td>&ndash;&gt;
+            <td align="center" style="color: green;"><i class="fa fa-check" aria-hidden="true" title="Supported"></i>
+            </td>
+            <td align="center" style="color: deepskyblue;"><i class="fa fa-snowflake-o" aria-hidden="true"
+                                                              title="Frozen"></i></td>
+            <td align="center"><img src="img/icon32.png" style="width:20px;" title="WeblocOpener feature"/></td>
+        </tr>-->
         <tr>
             <td>URL auto-paste</td>
             <td align="center" style="color: green;"><i class="fa fa-check" aria-hidden="true" title="Supported"></i>
