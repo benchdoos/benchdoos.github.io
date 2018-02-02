@@ -114,16 +114,27 @@
     %0AYou can attach log files (see WeblocOpener - Settings -> About -> Log folder -> zip log folder -> attach).
 %0ADon't forget to close the application before zipping logs;)" style="float:right;"
        title="E-MAIL: Leave a feedback to help me to improve the application!">Feedback</a>
-    <!--<p><img src="img/versions/1.4.2.png" align="left" style="margin-right: 40px;"></p>
+    <p><img src="img/versions/1.4.2.png" align="left" style="margin-right: 40px;"></p>
     <h2>[Supernova] Update v1.4.2 - What's new?</h2>
-    &lt;!&ndash;<img src="img/1.4.png" width="300px" style="margin-right: 20px; text-align: left;">&ndash;&gt;
-    &lt;!&ndash;<ul style="left: 10px;position: relative; text-align: right;">&ndash;&gt;
+
     <ul>
         <li>Done a lot of work under the hood. Now application is more stable and faster.</li>
         <li>Now you can generate QR-Code by the right-click on <code>.webloc</code> file.</li>
+        <li>Added custom download button in update-app.</li>
+        <li>Added 64-bit support.
+            <br><span style="color:orange;">Notice!</span> I
+            f your system is 64-bit and java is 86-bit arch, you should install 64-bit version of java.
+            If you'll have some troubles -
+            <a href="http://t.me/bench_doos" title="Telegram: Contact me fast! @bench_doos">contact me</a>.
+        </li>
+        <li><span style="color:orange;">WARNING!</span> If you can not open some files or if you try to edit file and
+            WeblocOpener shows that it is empty - try to rename file, using latin letters. This is an encoding problem,
+            I'm working on this issue.
+        </li>
+
     </ul>
 
-    <br><br>-->
+    <br><br>
     <h2 style="margin-top:0;">
         <a id="introduction" class="anchor" href="#introduction" aria-hidden="true"><span aria-hidden="true"
                                                                                           class="octicon octicon-link"></span></a>Introduction:
@@ -246,11 +257,11 @@
                         <img src="img/faq/faq_5.png"/>
                     </li>
 
-                    <!--<li>
+                    <li>
                         Generate QR-Code from <code>.webloc</code> context menu. Just make a right-click on a <code>.webloc</code>
                         file and select &quot;Generate QR-Code&quot;. You can simply use it to open the link directly on your phone!
                         <img src="img/faq/faq_qr.png"/>
-                    </li>-->
+                    </li>
 
                     <li>
                         Auto-paste URL from clipboard when you created a new file. When you've just created an empty
@@ -272,16 +283,6 @@
                         <img src="img/faq/faq_8.png"/>
                     </li>
                 </ul>
-
-                <br>
-
-                <!-- What is WeblocOpener? And how to work with it? Greeting video is available down below <i
-                     class="fa fa-level-down" aria-hidden="true"></i>-->
-                <!--<br><br>-->
-                <!--<p id="youtubeDefault" style="text-align: center;">
-                    <iframe width="740" height="416"
-                            src="https://www.youtube.com/embed/Z-bT-VWMDsQ" frameborder="0" allowfullscreen></iframe>
-                </p>-->
             </div>
         </section>
         <section id="content-tab2">
@@ -415,16 +416,16 @@
             <td align="center" style="color: green;"><i class="fa fa-check" aria-hidden="true" title="Supported"></i>
             </td>
         </tr>
-        <!--<tr>
+        <tr>
             <td>Generate QR-Code</td>
-            &lt;!&ndash;<td align="center" style="color: orange;"><i class="fa fa-dot-circle-o" aria-hidden="true"
-                                                         title="In development"></i></td>&ndash;&gt;
+            <!--<td align="center" style="color: orange;"><i class="fa fa-dot-circle-o" aria-hidden="true"
+                                                         title="In development"></i></td>-->
             <td align="center" style="color: green;"><i class="fa fa-check" aria-hidden="true" title="Supported"></i>
             </td>
             <td align="center" style="color: deepskyblue;"><i class="fa fa-snowflake-o" aria-hidden="true"
                                                               title="Frozen"></i></td>
             <td align="center"><img src="img/icon32.png" style="width:20px;" title="WeblocOpener feature"/></td>
-        </tr>-->
+        </tr>
         <tr>
             <td>URL auto-paste</td>
             <td align="center" style="color: green;"><i class="fa fa-check" aria-hidden="true" title="Supported"></i>
@@ -443,8 +444,6 @@
         </tr>
         <tr>
             <td>Open in not default browser</td>
-            <!--<td align="center" style="color: orange;"><i class="fa fa-dot-circle-o" aria-hidden="true"
-                                                         title="In development"></i></td>-->
             <td align="center" style="color: green;"><i class="fa fa-check" aria-hidden="true" title="Supported"></i>
             </td>
             <td align="center" style="color: deepskyblue;"><i class="fa fa-snowflake-o" aria-hidden="true"
@@ -470,7 +469,7 @@
                 href="https://twitter.com/jasonlong">Jason Long</a>.</span>
     </footer>
 
-    </p></section>
+    </section>
 <!-- Yandex.Metrika counter -->
 <script type="text/javascript">
     (function (d, w, c) {
