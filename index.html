@@ -12,6 +12,7 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/tabs.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/font-awesome.min.css"/>
+    <link rel="stylesheet" type="text/css" href="stylesheets/privacy.css"/>
 
 
     <script src="libs/jquery.min.js"></script>
@@ -239,7 +240,8 @@
                         </i>
                         &nbsp;or you can use your custom browser.
                         <br>You can use any custom browser by your own with custom call, using syntax:
-                        <code><i style="color: black; font-weight: bold;">&lt;file_path&gt;</i> <i style="color: red;font-weight: bold;">%site</i></code>.
+                        <code><i style="color: black; font-weight: bold;">&lt;file_path&gt;</i> <i
+                                style="color: red;font-weight: bold;">%site</i></code>.
                         <img src="img/faq/faq_3.png"/>
                     </li>
 
@@ -259,7 +261,8 @@
 
                     <li>
                         Generate QR-Code from <code>.webloc</code> context menu. Just make a right-click on a <code>.webloc</code>
-                        file and select &quot;Generate QR-Code&quot;. You can simply use it to open the link directly on your phone!
+                        file and select &quot;Generate QR-Code&quot;. You can simply use it to open the link directly on
+                        your phone!
                         <img src="img/faq/faq_qr.png"/>
                     </li>
 
@@ -457,18 +460,112 @@
         <span class="download_count_class"><span>Version: <span id="tag_name"></span></span>&nbsp;<span>Downloads: <span
                 id="download_count"></span></span></span>
 
+        <a href="" class="add_message" id="click_mes_form"><p>Privacy Policy</p></a>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $(".add_message").click(function(){
+                    $("#popup_message_form").slideToggle("slow");
+                    $(this).toggleClass("active"); return false;
+                });
+            });
+        </script>
+        <div class="wall_form" id="popup_message_form" style="display:none;">
+            <div class="privacy">
+                <h2>Privacy Policy</h2>
+                <p> Eugene Zrazhevsky built the WeblocOpener app as an Open Source app. This SERVICE is provided by Eugene
+                    Zrazhevsky at
+                    no cost and is intended for use as is.
+                </p>
+                <p>This block is used to inform website visitors regarding my policies with the collection, use, and
+                    disclosure of Personal Information if anyone decided to use my Service.
+                </p>
+                <p>If you choose to use my Service, then you agree to the collection and use of information in relation
+                    to this policy. The Personal Information that I collect is used for providing and improving the
+                    Service. I will not use or share your information with anyone except as described
+                    in this Privacy Policy.
+                </p>
+                <p>The terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, which is
+                    accessible
+                    at WeblocOpener unless otherwise defined in this Privacy Policy.
+                </p>
+                <p><strong><a name="information"></a>Information Collection and Use</strong></p>
+                <p>For a better experience, while using our Service, I may
+                    require you to provide us with certain
+                    personally identifiable information, including but not limited to <b>PC Hardware info, files opening</b>.
+                    <b>That information is stored locally on your computer and never send to me or 3rd person without your
+                        participation.</b>
+                    Information is collecting in log files that can help to find out the problem if it exist. Log files can
+                    reach me only if
+                    you, user, will send log files by yourself to detect the problem.
+                </p>
+                <p>In the same way the app does use third party services that may collect information used to identify you.</p>
+                <p>
+                <strong>Log
+                    Data</strong></p>
+                <p> I want to inform you that whenever you use my Service, in a case of an
+                    error in the app I collect <a href="#information">data and information</a> <b>only if you send
+                        manually to <a href="mailto:weblocopener@gmail.com">weblocopener@gmail.com</a></b>.
+                    This Log Data may include information such as your device Internet Protocol (“IP”)
+                    address, pc name, operating system version, the configuration of the app when utilizing my Service,
+                    the time and date of your use of the Service, and other statistics.
+                </p>
+                <p><strong>Cookies</strong></p>
+                <p>Cookies are files with a small amount of data that are commonly used as
+                    anonymous unique identifiers. These
+                    are sent to your browser from the websites that you visit and are stored on your device's internal
+                    memory.
+                </p>
+                <p>This Service does not use these “cookies” explicitly. However, the app may use third party code and
+                    libraries
+                    that use “cookies” to collect information and improve their services. You have the option to either
+                    accept or refuse these cookies and know when a cookie is being sent to your device. If you choose to
+                    refuse our cookies, you may not be able to use some portions of this Service.
+                </p>
+                <p><strong>Security</strong></p>
+                <p> I value your trust in providing us your Personal Information, thus we are
+                    striving
+                    to use commercially acceptable means of protecting it. But remember that no method of transmission over
+                    the internet, or method of electronic storage is 100% secure and reliable, and I cannot guarantee
+                    its absolute security.
+                </p>
+                <p><strong>Links to Other Sites</strong></p>
+                <p>This Service may contain links to other sites. If you click on a
+                    third-party link, you will be directed
+                    to that site. Note that these external sites are not operated by me. Therefore, I strongly
+                    advise you to review the Privacy Policy of these websites. I have no control over
+                    and assume no responsibility for the content, privacy policies, or practices of any third-party sites
+                    or services.
+                </p>
+                <p><strong>Changes to This Privacy Policy</strong></p>
+                <p> I may update our Privacy Policy from time to time. Thus,
+                    you are advised to review
+                    this page periodically for any changes. I will notify you of any changes by posting
+                    the new Privacy Policy on this page. These changes are effective immediately after they are posted on
+                    this page.
+                </p>
+                <p><strong>Contact me</strong></p>
+                <p>If you have any questions or suggestions about my Privacy Policy, do not
+                    hesitate to contact me: <a href="mailto:weblocopener@gmail.com">weblocopener@gmail.com</a>.
+                </p>
+            </div>
+        </div>
+
+
         <span class="site-footer-owner"><a href="https://github.com/benchdoos/WeblocOpener">WeblocOpener</a> is maintained by <a
                 href="https://github.com/benchdoos">benchdoos</a> (Eugene Zrazhevsky). <a
                 href="mailto:weblocopener@gmail.com" title="Send e-mail to me.">Contact me!</a>&nbsp;&nbsp;<a
                 href="http://t.me/bench_doos" title="Telegram: Contact me fast! @bench_doos"><img
-                src="img/telegram-icon-128.png" style="height: 18px;"/></a> <a rel="license" href="https://github.com/benchdoos/WeblocOpener/blob/master/LICENSE/"><img alt="Apache 2.0 License" style="border-width:0" src="/img/license/asf_logo.png" height="31px" /></a></span>
+                src="img/telegram-icon-128.png" style="height: 18px;"/></a> <a rel="license"
+                                                                               href="https://github.com/benchdoos/WeblocOpener/blob/master/LICENSE/"><img
+                alt="Apache 2.0 License" style="border-width:0" src="/img/license/asf_logo.png"
+                height="31px"/></a></span>
 
         <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a
                 href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a
                 href="https://twitter.com/jasonlong">Jason Long</a>.</span>
     </footer>
 
-    </section>
+</section>
 <!-- Yandex.Metrika counter -->
 <script type="text/javascript">
     (function (d, w, c) {
