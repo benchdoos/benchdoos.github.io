@@ -13,6 +13,9 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/tabs.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/font-awesome.min.css"/>
     <link rel="stylesheet" type="text/css" href="stylesheets/privacy.css"/>
+    <link rel="stylesheet" type="text/css" href="stylesheets/updateInfo.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/flag-icon.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/flags.css"/>
 
 
     <script src="libs/jquery.min.js"></script>
@@ -70,6 +73,27 @@
             }
         })(document, window, "yandex_metrika_callbacks");
     </script>
+
+    <script>
+        /*якорь*/
+        $(document).ready(function () {
+            $("#content").on("click", "a", function (event) {
+                //отменяем стандартную обработку нажатия по ссылке
+                event.preventDefault();
+
+                //забираем идентификатор бока с атрибута href
+                var id = $(this).attr('href'),
+
+                    //узнаем высоту от начала страницы до блока на который ссылается якорь
+                    top = $(id).offset().top;
+
+                //анимируем переход на расстояние - top за 1500 мс
+                $('body,html').animate({scrollTop: top}, 1000);
+            });
+        });
+
+    </script>
+
     <noscript>
         <div><img src="https://mc.yandex.ru/watch/41811549" style="position:absolute; left:-9999px;" alt=""/></div>
     </noscript>
@@ -102,62 +126,46 @@
     <a href="https://github.com/benchdoos/WeblocOpener/tarball/master" class="btn">Download .tar.gz</a>-->
 </section>
 
-<section class="main-content">
+<section class="main-content" id="content">
 
 
-    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" style="float:right; padding-left: 10px;">
+    <div style="float:right; padding-left: 10px;">
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" style="float:right; padding-left: 10px;">
 
-        <!-- Identify your business so that you can collect the payments. -->
-        <input type="hidden" name="business"
-               value="eugeny.zrazhevsky@icloud.com">
+            <!-- Identify your business so that you can collect the payments. -->
+            <input type="hidden" name="business"
+                   value="eugeny.zrazhevsky@icloud.com">
 
-        <!-- Specify a Donate button. -->
-        <input type="hidden" name="cmd" value="_donations">
+            <!-- Specify a Donate button. -->
+            <input type="hidden" name="cmd" value="_donations">
 
-        <!-- Specify details about the contribution -->
-        <input type="hidden" name="item_name" value="Donate">
-        <input type="hidden" name="item_number" value="WeblocOpener">
-        <input type="hidden" name="currency_code" value="USD">
+            <!-- Specify details about the contribution -->
+            <input type="hidden" name="item_name" value="Donate">
+            <input type="hidden" name="item_number" value="WeblocOpener">
+            <input type="hidden" name="currency_code" value="USD">
 
-        <!-- Display the payment button. -->
-        <input type="image" name="submit"
-               src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif"
-               alt="Donate">
-        <img alt="" width="1" height="1"
-             src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif">
+            <!-- Display the payment button. -->
+            <input type="image" name="submit"
+                   src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif"
+                   alt="Donate">
+            <img alt="" width="1" height="1"
+                 src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif">
 
-    </form>
-    <a href="http://t.me/bench_doos" style="float:right; padding-left: 10px;"
-       title="Telegram: Contact me fast! @bench_doos"><img src="img/telegram-icon-128.png" style="height: 18px;"/></a>
-    <a href="mailto:weblocopener@gmail.com?subject=WeblocOpener feedback
+        </form>
+        <a href="#update_info_id"
+           title="Latest update"><img src="img/update.png" style="height: 26px;"/></a>
+
+        <a href="http://t.me/bench_doos"
+           title="Telegram: Contact me fast! @bench_doos"><img src="img/telegram-icon-128.png"
+                                                               style="height: 26px;"/></a>
+        <a href="mailto:weblocopener@gmail.com?subject=WeblocOpener feedback
     &body=Type here your question / problem, I try to help you as soon as it is possible!
     %0AYou can attach log files (see WeblocOpener - Settings -> About -> Log folder -> zip log folder -> attach).
-%0ADon't forget to close the application before zipping logs;)" style="float:right;"
-       title="E-MAIL: Leave a feedback to help me to improve the application!">Feedback</a>
-    <!--<p><img src="img/versions/1.4.2.png" align="left" style="margin-right: 40px;"></p>-->
-    <h2 id="update_header"></h2>
-    <span id="update_version" style="font-size: 10px;"></span>
-    <div id="update_text"></div>
-    <!--<h2>[Supernova] Update v1.4.2 - What's new?</h2>
+%0ADon't forget to close the application before zipping logs;)"
+           title="E-MAIL: Leave a feedback to help me to improve the application!"><img src="img/e-mail.png"
+                                                                                        style="height: 26px;"/></a>
+    </div>
 
-    <ul>
-        <li>Done a lot of work under the hood. Now application is more stable and faster.</li>
-        <li>Now you can generate QR-Code by the right-click on <code>.webloc</code> file.</li>
-        <li>Added custom download button in update-app.</li>
-        <li>Added 64-bit support.
-            <br><span style="color:orange;">Notice!</span> I
-            f your system is 64-bit and java is 86-bit arch, you should install 64-bit version of java.
-            If you'll have some troubles -
-            <a href="http://t.me/bench_doos" title="Telegram: Contact me fast! @bench_doos">contact me</a>.
-        </li>
-        <li><span style="color:orange;">WARNING!</span> If you can not open some files or if you try to edit file and
-            WeblocOpener shows that it is empty - try to rename file, using latin letters. This is an encoding problem,
-            I'm working on this issue.
-        </li>
-
-    </ul>-->
-
-    <br><br>
     <h2 style="margin-top:0;">
         <a id="introduction" class="anchor" href="#introduction" aria-hidden="true"><span aria-hidden="true"
                                                                                           class="octicon octicon-link"></span></a>Introduction:
@@ -165,56 +173,39 @@
 
     <p>WeblocOpener is a simple way to open, edit, create MacOS Safari <code>.webloc</code> files on Windows.</p>
 
-    <div class="SRRoot">
-        <div class="SystemRequirements" align="left">
-            <p><b>System Requirements</b></p>
-            <ul>
-                <li><b>Operating system:</b></li>
-                <li><i class="fa fa-windows" aria-hidden="true"></i> Windows XP (SP3), Vista, 7, 8, 10</li>
-                <!--<li><i class="fa fa-linux" aria-hidden="true"></i> Frozen</li>-->
-                <li><b>CPU:</b></li>
-                <li><i class="fa fa-microchip" aria-hidden="true"></i> Pentium 2 266MHz or better</li>
-                <li><b>Memory:</b></li>
-                <li><i class="fa fa-tasks" aria-hidden="true"></i> 128 MB RAM</li>
-                <li><b>Hard drive:</b></li>
-                <li><i class="fa fa-hdd-o" aria-hidden="true"></i> 25 MB free hard disk space</li>
-                <br>
-                <li><b>Additional software:</b></li>
-                <li><i class="fa fa-server" aria-hidden="true"></i> Java 8 required - <a
-                        href="https://java.com/download/">Download</a></li>
-            </ul>
-        </div>
-    </div>
-
     <h2>
-        <a id="features" class="anchor" href="#features" aria-hidden="true"><span aria-hidden="true"
-                                                                                  class="octicon octicon-link"></span></a>Features
-    </h2>
+        <a id="what-is-webloc-file" class="anchor" href="#what-is-webloc-file" aria-hidden="true"><span
+                aria-hidden="true" class="octicon octicon-link"></span></a>What is <b>.webloc</b> file?</h2>
+    <img src="img/webloc.png" align="left" style="margin-right: 10px;"/>
+    <p><code>.webloc</code> extension is usually means that in front of you is a MacOS Safari web-url.
+        Actually it is a text document, formatted to property list — PLIST 1.0
+        (<a href="https://developer.apple.com/library/content/documentation/General/Reference/InfoPlistKeyReference/Articles/AboutInformationPropertyListFiles.html">see</a>).
+        You can open it with any text-editor (like notepad on Windows) to find out the url, saved in
+        <code>.webloc</code> file.
+        But if you need to open a big number of files or open them often — using text-editor wouldn't be the fastest and
+        the easiest solution.
+        So that's why I want to offer you — WeblocOpener.</p>
 
+
+ <!--
     <ul>
         <li>Get full access to MacOS Safari <code>.webloc</code> link-files on Windows: open, edit and create.</li>
         <li>Created files does not differ from MacOS original files, that means <code>.webloc</code> files, created by
             WeblocOpener can be opened in MacOS Safari without any problems.
         </li>
         <li>Easy to install and easy to use.</li>
+        <li>Easy to create QR-Code.</li>
+        <li>Easy to copy <code>.webloc</code> url to clipboard.</li>
         <li>Easy to update with auto-update app.
             Updater will help you to find out when new version is available, download and install the update.
         </li>
-    </ul>
+
+    </ul>-->
 
     <h2>
-        <a id="what-is-webloc-file" class="anchor" href="#what-is-webloc-file" aria-hidden="true"><span
-                aria-hidden="true" class="octicon octicon-link"></span></a>What is <b>.webloc</b> file?</h2>
-    <img src="img/webloc.png" align="left" style="margin-right: 10px;"/>
-    <p><code>.webloc</code> extension is usually means that in front of you is a MacOS Safari web-url.
-        Actually it is a text document, formated to property list - PLIST 1.0
-        (<a href="https://developer.apple.com/library/content/documentation/General/Reference/InfoPlistKeyReference/Articles/AboutInformationPropertyListFiles.html">see</a>).
-        You can open it with any text-editor (like notepad on Windows) to find out the url, saved in
-        <code>.webloc</code> file.
-        But if you need to open a big number of files or open them often - using text-editor wouldn't be the fastest and
-        the easiest solution.
-        So that's why this application was created - for these users.</p>
-    <br>
+        <a id="features" class="anchor" href="#features" aria-hidden="true"><span aria-hidden="true"
+                                                                                  class="octicon octicon-link"></span></a>Features
+    </h2>
     <div class="tabs">
         <input id="tab1" type="radio" name="tabs" checked>
         <!--<label for="tab1" title="HaveQuestions">Have questions?</label>
@@ -306,6 +297,14 @@
                     <li>
                         Find out, what's new in new update. Use info icon on Updater to check it out.
                         <img src="img/faq/faq_8.png"/>
+                    </li>
+
+                    <li> Supported languages:
+                        <span class="label label-default"><span class="flag-icon flag-icon-gb"></span>EN</span>
+                        <span class="label label-default"><span class="flag-icon flag-icon-it"></span>IT</span>
+                        <span class="label label-default"><span class="flag-icon flag-icon-ru"></span>RU</span>
+                        <span class="label label-default"><span class="flag-icon flag-icon-de"></span>DE</span>
+                        <span class="label label-default"><span class="flag-icon flag-icon-fr"></span>FR</span>
                     </li>
                 </ul>
             </div>
@@ -399,10 +398,35 @@
             <p> in development... </p>
         </section>
     </div>
+
     <br>
-    <h2>
+
+    <br>
+    <div class="SRRoot">
+        <div class="SystemRequirements" align="left">
+            <p><b>System Requirements</b></p>
+            <ul>
+                <li><b>Operating system:</b></li>
+                <li><i class="fa fa-windows" aria-hidden="true"></i> Windows XP (SP3), Vista, 7, 8, 10</li>
+                <!--<li><i class="fa fa-linux" aria-hidden="true"></i> Frozen</li>-->
+                <li><b>CPU:</b></li>
+                <li><i class="fa fa-microchip" aria-hidden="true"></i> Pentium 2 266MHz or better</li>
+                <li><b>Memory:</b></li>
+                <li><i class="fa fa-tasks" aria-hidden="true"></i> 128 MB RAM</li>
+                <li><b>Hard drive:</b></li>
+                <li><i class="fa fa-hdd-o" aria-hidden="true"></i> 25 MB free hard disk space</li>
+                <br>
+                <li><b>Additional software:</b></li>
+                <li><i class="fa fa-server" aria-hidden="true"></i> Java 8 required - <a
+                        href="https://java.com/download/">Download</a></li>
+            </ul>
+        </div>
+        <br>
+    </div>
+    <h2 style="margin: 0">
         <a id="supported-features" class="anchor" href="#supported-features" aria-hidden="true"><span
                 aria-hidden="true" class="octicon octicon-link"></span></a>Supported features</h2>
+
     <table>
         <thead style="background-color: #eaf5ff;">
         <tr>
@@ -487,6 +511,17 @@
         </tr>
         </tbody>
     </table>
+
+    <br>
+
+    <div class="update_info" id="update_info_id">
+        <h2 id="update_title">Latest update - <span id="update_version">unavailable</span></h2>
+        <!--<p><img src="img/versions/1.4.2.png" align="left" style="margin-right: 20px;"></p>-->
+        <h2 id="update_header"></h2>
+        <div id="update_body">
+            <div id="update_text">No info</div>
+        </div>
+    </div>
 
     <footer class="site-footer">
         <span class="download_count_class"><span>Version: <span id="tag_name"></span></span>&nbsp;<span>Downloads: <span

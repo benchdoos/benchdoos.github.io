@@ -1,0 +1,23 @@
+
+#update_title {
+    border: solid #6b6b6b;
+    border-width: 1px 1px 0 1px;
+    border-radius: 8px 8px 0 0;
+    background-color: black;
+    color: white;
+    margin-bottom: 0;
+    padding: 0 10px 0 10px;
+}
+#update_header{
+    border: solid #6b6b6b;
+    border-width: 0 1px 0 1px;
+    padding: 0 10px 0 10px;
+    margin: 0;
+}
+
+#update_body {
+    border: solid #6b6b6b;
+    border-width: 0 1px 1px 1px;
+    border-radius: 0 0 8px 8px;
+    padding: 0 10px 0 10px;
+}
