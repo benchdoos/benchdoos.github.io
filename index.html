@@ -18,24 +18,26 @@
     <script src="libs/jquery.min.js"></script>
     <script>
         $.get('https://api.github.com/repos/benchdoos/WeblocOpener/releases/latest', function (data) {
-            $('#browser_download_url').attr('href', data.assets[0].browser_download_url);
-        });
-
-        $.get('https://api.github.com/repos/benchdoos/WeblocOpener/releases/latest', function (data) {
             $('#tag_name').text(data.tag_name);
+        });
+        $.get('https://api.github.com/repos/benchdoos/WeblocOpener/releases/latest', function (data) {
+            $('#update_header').text(data.name);
+        });
+        $.get('https://api.github.com/repos/benchdoos/WeblocOpener/releases/latest', function (data) {
+            $('#update_version').text(data.tag_name);
+        });
+        $.get('https://api.github.com/repos/benchdoos/WeblocOpener/releases/latest', function (data) {
+            $('#update_text').html(data.body);
         });
         $.get('https://api.github.com/repos/benchdoos/WeblocOpener/releases/latest', function (data) {
             $('#download_count').text(data.assets[0].download_count);
         });
 
-
+        $.get('https://api.github.com/repos/benchdoos/WeblocOpener/releases/latest', function (data) {
+            $('#browser_download_url').attr('href', data.assets[0].browser_download_url);
+        });
     </script>
 
-    <script>
-        function donate() {
-            document.getElementById('donate_link').innerHTML = "<div style=\"float:right; padding-left: 10px;\">Bitcoin: 1Bk5XPkdAENP8MQKzk9Snwama8t1gHLoUf</div>";
-        }
-    </script>
     <!-- Yandex.Metrika counter -->
     <script type="text/javascript">
         (function (d, w, c) {
@@ -103,11 +105,28 @@
 <section class="main-content">
 
 
-    <!--<h1 style="padding: 0;text-align: left;">
-        <a id="weblocopener" class="anchor" href="#weblocopener" aria-hidden="true">
-            <span aria-hidden="true" class="octicon octicon-link"></span></a>WeblocOpener
-    </h1>-->
-    <div id="donate_link"><a href="javascript:donate()" style="float:right; padding-left: 10px;">Donate</a></div>
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" style="float:right; padding-left: 10px;">
+
+        <!-- Identify your business so that you can collect the payments. -->
+        <input type="hidden" name="business"
+               value="eugeny.zrazhevsky@icloud.com">
+
+        <!-- Specify a Donate button. -->
+        <input type="hidden" name="cmd" value="_donations">
+
+        <!-- Specify details about the contribution -->
+        <input type="hidden" name="item_name" value="Donate">
+        <input type="hidden" name="item_number" value="WeblocOpener">
+        <input type="hidden" name="currency_code" value="USD">
+
+        <!-- Display the payment button. -->
+        <input type="image" name="submit"
+               src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif"
+               alt="Donate">
+        <img alt="" width="1" height="1"
+             src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif">
+
+    </form>
     <a href="http://t.me/bench_doos" style="float:right; padding-left: 10px;"
        title="Telegram: Contact me fast! @bench_doos"><img src="img/telegram-icon-128.png" style="height: 18px;"/></a>
     <a href="mailto:weblocopener@gmail.com?subject=WeblocOpener feedback
@@ -115,8 +134,11 @@
     %0AYou can attach log files (see WeblocOpener - Settings -> About -> Log folder -> zip log folder -> attach).
 %0ADon't forget to close the application before zipping logs;)" style="float:right;"
        title="E-MAIL: Leave a feedback to help me to improve the application!">Feedback</a>
-    <p><img src="img/versions/1.4.2.png" align="left" style="margin-right: 40px;"></p>
-    <h2>[Supernova] Update v1.4.2 - What's new?</h2>
+    <!--<p><img src="img/versions/1.4.2.png" align="left" style="margin-right: 40px;"></p>-->
+    <h2 id="update_header"></h2>
+    <span id="update_version" style="font-size: 10px;"></span>
+    <div id="update_text"></div>
+    <!--<h2>[Supernova] Update v1.4.2 - What's new?</h2>
 
     <ul>
         <li>Done a lot of work under the hood. Now application is more stable and faster.</li>
@@ -133,7 +155,7 @@
             I'm working on this issue.
         </li>
 
-    </ul>
+    </ul>-->
 
     <br><br>
     <h2 style="margin-top:0;">
@@ -462,17 +484,19 @@
 
         <a href="" class="add_message" id="click_mes_form"><p>Privacy Policy</p></a>
         <script type="text/javascript">
-            $(document).ready(function(){
-                $(".add_message").click(function(){
+            $(document).ready(function () {
+                $(".add_message").click(function () {
                     $("#popup_message_form").slideToggle("slow");
-                    $(this).toggleClass("active"); return false;
+                    $(this).toggleClass("active");
+                    return false;
                 });
             });
         </script>
         <div class="wall_form" id="popup_message_form" style="display:none;">
             <div class="privacy">
                 <h2>Privacy Policy</h2>
-                <p> Eugene Zrazhevsky built the WeblocOpener app as an Open Source app. This SERVICE is provided by Eugene
+                <p> Eugene Zrazhevsky built the WeblocOpener app as an Open Source app. This SERVICE is provided by
+                    Eugene
                     Zrazhevsky at
                     no cost and is intended for use as is.
                 </p>
@@ -491,17 +515,21 @@
                 <p><strong><a name="information"></a>Information Collection and Use</strong></p>
                 <p>For a better experience, while using our Service, I may
                     require you to provide us with certain
-                    personally identifiable information, including but not limited to <b>PC Hardware info, files opening</b>.
-                    <b>That information is stored locally on your computer and never send to me or 3rd person without your
+                    personally identifiable information, including but not limited to <b>PC Hardware info, files
+                        opening</b>.
+                    <b>That information is stored locally on your computer and never send to me or 3rd person without
+                        your
                         participation.</b>
-                    Information is collecting in log files that can help to find out the problem if it exist. Log files can
+                    Information is collecting in log files that can help to find out the problem if it exist. Log files
+                    can
                     reach me only if
                     you, user, will send log files by yourself to detect the problem.
                 </p>
-                <p>In the same way the app does use third party services that may collect information used to identify you.</p>
+                <p>In the same way the app does use third party services that may collect information used to identify
+                    you.</p>
                 <p>
-                <strong>Log
-                    Data</strong></p>
+                    <strong>Log
+                        Data</strong></p>
                 <p> I want to inform you that whenever you use my Service, in a case of an
                     error in the app I collect <a href="#information">data and information</a> <b>only if you send
                         manually to <a href="mailto:weblocopener@gmail.com">weblocopener@gmail.com</a></b>.
@@ -524,7 +552,8 @@
                 <p><strong>Security</strong></p>
                 <p> I value your trust in providing us your Personal Information, thus we are
                     striving
-                    to use commercially acceptable means of protecting it. But remember that no method of transmission over
+                    to use commercially acceptable means of protecting it. But remember that no method of transmission
+                    over
                     the internet, or method of electronic storage is 100% secure and reliable, and I cannot guarantee
                     its absolute security.
                 </p>
@@ -533,14 +562,16 @@
                     third-party link, you will be directed
                     to that site. Note that these external sites are not operated by me. Therefore, I strongly
                     advise you to review the Privacy Policy of these websites. I have no control over
-                    and assume no responsibility for the content, privacy policies, or practices of any third-party sites
+                    and assume no responsibility for the content, privacy policies, or practices of any third-party
+                    sites
                     or services.
                 </p>
                 <p><strong>Changes to This Privacy Policy</strong></p>
                 <p> I may update our Privacy Policy from time to time. Thus,
                     you are advised to review
                     this page periodically for any changes. I will notify you of any changes by posting
-                    the new Privacy Policy on this page. These changes are effective immediately after they are posted on
+                    the new Privacy Policy on this page. These changes are effective immediately after they are posted
+                    on
                     this page.
                 </p>
                 <p><strong>Contact me</strong></p>
