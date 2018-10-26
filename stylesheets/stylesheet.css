@@ -132,12 +132,6 @@ a:hover {
     animation: page-header 10s ease infinite;
 }
 
-.second-page-header{
-    color: #fff;
-    text-align: center;
-    background: url("../img/air_balloon_400.png") no-repeat right;
-}
-
 @-webkit-keyframes page-header {
     0% {
         background-position: 2% 0%
@@ -183,6 +177,65 @@ a:hover {
     }
     100% {
         background-position: 2% 0%
+    }
+}
+
+.second-page-header{
+    color: #fff;
+    text-align: center;
+    background: url("../img/air_balloon_400.png") no-repeat right;
+
+    -webkit-animation: second-page-header 20s ease infinite;
+    -moz-animation: second-page-header 20s ease infinite;
+    -o-animation: second-page-header 20s ease infinite;
+    animation: second-page-header 20s ease infinite;
+}
+
+@-webkit-keyframes second-page-header {
+    0% {
+        background-position: 100% 20%
+    }
+    50% {
+        background-position: 100% 80%
+    }
+    100% {
+        background-position: 100% 20%
+    }
+}
+
+@-moz-keyframes second-page-header {
+    0% {
+        background-position: 100% 20%
+    }
+    50% {
+        background-position: 100% 80%
+    }
+    100% {
+        background-position: 100% 20%
+    }
+}
+
+@-o-keyframes second-page-header {
+    0% {
+        background-position: 100% 20%
+    }
+    50% {
+        background-position: 100% 80%
+    }
+    100% {
+        background-position: 100% 20%
+    }
+}
+
+@keyframes second-page-header {
+    0% {
+        background-position: 100% 20%
+    }
+    50% {
+        background-position: 100% 80%
+    }
+    100% {
+        background-position: 100% 20%
     }
 }
 
