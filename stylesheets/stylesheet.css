@@ -98,7 +98,6 @@ a:hover {
     margin-bottom: 0 !important;
 }
 
-
 .SystemRequirements ul {
     list-style-type: none;
     font-size: 12px;
@@ -124,14 +123,72 @@ a:hover {
 .page-header {
     color: #fff;
     text-align: center;
-    background-color: #c1d8f7;
-    background-image: url("../img/air_balloon_400.png"), linear-gradient(-45deg, #c1d8f7, #4f7ece); /* W3C */
-    background-position: right;
-    background-repeat: no-repeat;
+    /* W3C */
+    background: linear-gradient(321deg, #89b5f7, #3478ce);
+
+    -webkit-animation: page-header 10s ease infinite;
+    -moz-animation: page-header 10s ease infinite;
+    -o-animation: page-header 10s ease infinite;
+    animation: page-header 10s ease infinite;
 }
 
+.second-page-header{
+    color: #fff;
+    text-align: center;
+    background: url("../img/air_balloon_400.png") no-repeat right;
+}
+
+@-webkit-keyframes page-header {
+    0% {
+        background-position: 2% 0%
+    }
+    50% {
+        background-position: 99% 100%
+    }
+    100% {
+        background-position: 2% 0%
+    }
+}
+
+@-moz-keyframes page-header {
+    0% {
+        background-position: 2% 0%
+    }
+    50% {
+        background-position: 99% 100%
+    }
+    100% {
+        background-position: 2% 0%
+    }
+}
+
+@-o-keyframes page-header {
+    0% {
+        background-position: 2% 0%
+    }
+    50% {
+        background-position: 99% 100%
+    }
+    100% {
+        background-position: 2% 0%
+    }
+}
+
+@keyframes page-header {
+    0% {
+        background-position: 2% 0%
+    }
+    50% {
+        background-position: 99% 100%
+    }
+    100% {
+        background-position: 2% 0%
+    }
+}
+
+
 @media screen and (min-width: 64em) {
-    .page-header {
+    .second-page-header {
         padding: 5rem 6rem;
         /*background-position: center;*/
     }
