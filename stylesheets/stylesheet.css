@@ -64,6 +64,8 @@ a:hover {
         width: 100%;
         padding: 0.75rem;
         font-size: 0.9rem;
+        color: rgba(255, 255, 255, 1);
+        background-color: rgba(255, 255, 255, 0.3);
     }
 
     .btn + .btn {
@@ -308,7 +310,7 @@ a:hover {
 @media screen and (max-width: 42em) {
     .project-name {
         font-size: 1.75rem;
-        text-shadow: 0px 0px 12px rgba(117, 117, 117, 1);
+        text-shadow: 0 0 12px rgb(0, 0, 0);
     }
 }
 
@@ -335,7 +337,7 @@ a:hover {
     .project-tagline {
         font-size: 1.10rem;
         opacity: 1;
-        background-color: RGBa(193, 216, 247, 0.2);
+        background-color: RGBa(193, 216, 247, 0.4);
     }
 }
 
