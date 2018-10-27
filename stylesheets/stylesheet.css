@@ -11,7 +11,6 @@ body {
     color: #606c71;
 }
 
-
 table td {
     font-size: 16px;
 }
@@ -182,7 +181,31 @@ a:hover {
     }
 }
 
-.second-page-header{
+@media only screen and (max-width : 768px) {
+
+    .page-header {
+        /*CSS animations*/
+        -webkit-animation: none !important;
+        -moz-animation: none !important;
+        -o-animation: none !important;
+        -ms-animation: none !important;
+        animation: none !important;
+        color: #fff;
+        text-align: center;
+        background: url(../img/air_balloon_400.png), linear-gradient(-45deg, #c1d8f7, #4f7ece) no-repeat;
+    }
+    .second-page-header {
+        /*CSS animations*/
+        -webkit-animation: none !important;
+        -moz-animation: none !important;
+        -o-animation: none !important;
+        -ms-animation: none !important;
+        animation: none !important;
+
+        background: none !important;
+    }
+}
+.second-page-header {
     color: #fff;
     text-align: center;
     background: url("../img/air_balloon_400.png") no-repeat right;
@@ -240,7 +263,6 @@ a:hover {
         background-position: 100% 20%
     }
 }
-
 
 @media screen and (min-width: 64em) {
     .second-page-header {
