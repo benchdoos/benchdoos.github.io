@@ -339,7 +339,7 @@ a:hover {
 .main-content code {
     padding: 2px 4px;
     font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
-    font-size: 0.9rem;
+    /*font-size: 0.9rem;*/
     color: #383e41;
     background-color: #f3f6fa;
     border-radius: 0.3rem;

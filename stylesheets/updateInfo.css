@@ -1,22 +1,23 @@
 
 #update_title {
-    border: solid #89b5f7;
+    border: solid #bbc6d0;
     border-width: 1px 1px 0 1px;
     border-radius: 8px 8px 0 0;
-    background-color: #009ece;
-    color: white;
+    background-color: #eaf5ff;
     margin-bottom: 0;
-    padding: 0 10px 0 10px;
+    /*padding: 0 10px 0 10px;*/
+    font-weight: bold;
+    padding: 0.5rem 1rem;
 }
 #update_header{
-    border: solid #89b5f7;
+    border: solid #bbc6d0;
     border-width: 0 1px 0 1px;
     padding: 0 10px 0 10px;
     margin: 0;
 }
 
 #update_body {
-    border: solid #89b5f7;
+    border: solid #bbc6d0;
     border-width: 0 1px 1px 1px;
     border-radius: 0 0 8px 8px;
     padding: 0 10px 0 10px;
