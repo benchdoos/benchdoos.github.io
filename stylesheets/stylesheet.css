@@ -186,8 +186,7 @@ a:hover {
     }
 }
 
-@media only screen and (max-width: 768px) {
-
+@media only screen and (max-width: 42em) {
     .page-header {
         /*CSS animations*/
         -webkit-animation: none !important;
@@ -197,8 +196,9 @@ a:hover {
         animation: none !important;
         color: #fff;
         text-align: center;
-        background: url(../img/air_balloon_400.png), linear-gradient(-45deg, #c1d8f7, #4f7ece) no-repeat;
+        background: url(../img/air_balloon_400.png), linear-gradient(-45deg, #89b5f7, #3478ce) no-repeat;
         background-repeat: no-repeat;
+        height: 400%;
     }
 
     .second-page-header {
@@ -281,8 +281,19 @@ a:hover {
 
 @media screen and (min-width: 42em) and (max-width: 64em) {
     .page-header {
+
+        color: #fff;
+        text-align: center;
+        /* W3C */
+        background: linear-gradient(-45deg, #89b5f7, #3478ce);
+        background-size: 400% 400%;
+    }
+    .second-page-header {
         padding: 3rem 4rem;
-        background-position: center;
+        color: #fff;
+        text-align: center;
+        background: url("../img/air_balloon_400.png") no-repeat right;
+        background-size: 40%;
     }
 }
 
@@ -323,7 +334,7 @@ a:hover {
 .project-tagline {
     margin-bottom: 2rem;
     font-weight: normal;
-    opacity: 0.7;
+    opacity: 0.8;
 }
 
 @media screen and (min-width: 64em) {
