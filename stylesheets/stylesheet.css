@@ -131,7 +131,6 @@ a:hover {
     background: linear-gradient(-45deg, #89b5f7, #3478ce);
     background-size: 400% 400%;
 
-
     -webkit-animation: page-header 15s ease infinite;
     -moz-animation: page-header 15s ease infinite;
     -o-animation: page-header 15s ease infinite;
@@ -186,7 +185,7 @@ a:hover {
     }
 }
 
-@media only screen and (max-width : 768px) {
+@media only screen and (max-width: 768px) {
 
     .page-header {
         /*CSS animations*/
@@ -198,7 +197,9 @@ a:hover {
         color: #fff;
         text-align: center;
         background: url(../img/air_balloon_400.png), linear-gradient(-45deg, #c1d8f7, #4f7ece) no-repeat;
+        background-repeat: no-repeat;
     }
+
     .second-page-header {
         /*CSS animations*/
         -webkit-animation: none !important;
