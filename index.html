@@ -11,7 +11,8 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/tabs.css" media="screen">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css"
+          integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="stylesheets/font-awesome.min.css"/>
     <link rel="stylesheet" type="text/css" href="stylesheets/privacy.css"/>
     <link rel="stylesheet" type="text/css" href="stylesheets/updateInfo.css"/>
@@ -29,6 +30,9 @@
         });
         $.get('https://api.github.com/repos/benchdoos/WeblocOpener/releases/latest', function (data) {
             $('#update_version').text(data.tag_name);
+        });
+        $.get('https://api.github.com/repos/benchdoos/WeblocOpener/releases/latest', function (data) {
+            $('#update_download_count').text(data.assets[0].download_count);
         });
         $.get('https://api.github.com/repos/benchdoos/WeblocOpener/releases/latest', function (data) {
             $('#update_text').html(data.body);
@@ -117,14 +121,15 @@
 <body>
 <section class="page-header">
     <div class="second-page-header"><h1 class="project-name">WeblocOpener</h1>
-    <h2 class="project-tagline">Open <i class="fa fa-apple" aria-hidden="true"></i> MacOS Safari <code>.webloc</code>
-        link-files on <i class="fa fa-windows" aria-hidden="true"></i> Windows</h2>
-    <a href="https://vk.cc/6wK9bM" class="btn">View on GitHub</a>
+        <h2 class="project-tagline">Open <i class="fa fa-apple" aria-hidden="true"></i> MacOS Safari
+            <code>.webloc</code>
+            link-files on <i class="fa fa-windows" aria-hidden="true"></i> Windows</h2>
+        <a href="https://vk.cc/6wK9bM" class="btn">View on GitHub</a>
 
 
-    <a id="browser_download_url" class="btn">Download Setup</a>
-    <!--<a href="https://github.com/benchdoos/WeblocOpener/zipball/master" class="btn">Download .zip</a>
-    <a href="https://github.com/benchdoos/WeblocOpener/tarball/master" class="btn">Download .tar.gz</a>-->
+        <a id="browser_download_url" class="btn">Download Setup</a>
+        <!--<a href="https://github.com/benchdoos/WeblocOpener/zipball/master" class="btn">Download .zip</a>
+        <a href="https://github.com/benchdoos/WeblocOpener/tarball/master" class="btn">Download .tar.gz</a>-->
     </div>
 </section>
 
@@ -180,29 +185,32 @@
                 aria-hidden="true" class="octicon octicon-link"></span></a>What is <b>.webloc</b> file?</h2>
     <img src="img/webloc.png" align="left" style="margin-right: 10px;"/>
     <p><code>.webloc</code> extension is usually means that in front of you is a MacOS Safari web-url.
+        <br>
         Actually it is a text document, formatted to property list — PLIST 1.0
         (<a href="https://developer.apple.com/library/content/documentation/General/Reference/InfoPlistKeyReference/Articles/AboutInformationPropertyListFiles.html">see</a>).
+        <br>
         You can open it with any text-editor (like notepad on Windows) to find out the url, saved in
         <code>.webloc</code> file.
         But if you need to open a big number of files or open them often — using text-editor wouldn't be the fastest and
         the easiest solution.
+        <br>
         So that's why I want to offer you — WeblocOpener.</p>
 
 
- <!--
-    <ul>
-        <li>Get full access to MacOS Safari <code>.webloc</code> link-files on Windows: open, edit and create.</li>
-        <li>Created files does not differ from MacOS original files, that means <code>.webloc</code> files, created by
-            WeblocOpener can be opened in MacOS Safari without any problems.
-        </li>
-        <li>Easy to install and easy to use.</li>
-        <li>Easy to create QR-Code.</li>
-        <li>Easy to copy <code>.webloc</code> url to clipboard.</li>
-        <li>Easy to update with auto-update app.
-            Updater will help you to find out when new version is available, download and install the update.
-        </li>
+    <!--
+       <ul>
+           <li>Get full access to MacOS Safari <code>.webloc</code> link-files on Windows: open, edit and create.</li>
+           <li>Created files does not differ from MacOS original files, that means <code>.webloc</code> files, created by
+               WeblocOpener can be opened in MacOS Safari without any problems.
+           </li>
+           <li>Easy to install and easy to use.</li>
+           <li>Easy to create QR-Code.</li>
+           <li>Easy to copy <code>.webloc</code> url to clipboard.</li>
+           <li>Easy to update with auto-update app.
+               Updater will help you to find out when new version is available, download and install the update.
+           </li>
 
-    </ul>-->
+       </ul>-->
 
     <h2>
         <a id="features" class="anchor" href="#features" aria-hidden="true"><span aria-hidden="true"
@@ -291,7 +299,8 @@
 
                     <li>
                         Copy link from <code>.webloc</code> file using context menu. Make a right-click on a <code>.webloc</code>
-                        file and select &quot;Copy to clipboard&quot;. And you can send it to your friend without opening file!
+                        file and select &quot;Copy to clipboard&quot;. And you can send it to your friend without
+                        opening file!
                         <img src="img/faq/faq_clipboard.png"/>
                     </li>
 
@@ -411,139 +420,161 @@
 
     <div class="SRRoot">
         <h2 style="margin: 0">
-        <a id="system-requirements" class="anchor" href="#system-requirements" aria-hidden="true"><span
-                aria-hidden="true" class="octicon octicon-link"></span></a>System Requirements</h2>
+            <a id="system-requirements" class="anchor" href="#system-requirements" aria-hidden="true"><span
+                    aria-hidden="true" class="octicon octicon-link"></span></a>System Requirements</h2>
 
-    <table>
-        <thead style="background-color: #eaf5ff;">
-        <tr>
-            <th>Type</th>
-            <th>Requirements</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <td>Operating system</td>
-            <td><i class="fab fa-windows"  aria-hidden="true" style="color: #4f7ece"></i> Windows XP (SP3), Vista, 7, 8, 10</td>
-        </tr>
-        <tr>
-            <td>CPU</td>
-            <td><i class="fa fa-microchip" aria-hidden="true" style="color: #000000"></i> Pentium 2 266MHz or better</td>
-        </tr>
-        <tr>
-            <td>Memory</td>
-            <td><i class="fa fa-tasks" aria-hidden="true" style="color: #7e8482"></i> 128 MB RAM</td>
-        </tr>
-        <tr>
-            <td>Hard drive</td>
-            <td><i class="fa fa-hdd-o" aria-hidden="true" style="color: #616263"></i> 25 MB free hard disk space</td>
-        </tr><tr>
-            <td>Additional software</td>
-            <td><i class="fab fa-java"  aria-hidden="true" style="color: #ea0006"></i> Java 8 required - <a
-                    href="https://java.com/download/">Download</a></td>
-        </tr>
+        <table>
+            <thead style="background-color: #eaf5ff;">
+            <tr>
+                <th>Type</th>
+                <th>Requirements</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Operating system</td>
+                <td><i class="fab fa-windows" aria-hidden="true" style="color: #4f7ece"></i> Windows XP (SP3), Vista, 7,
+                    8, 10
+                </td>
+            </tr>
+            <tr>
+                <td>CPU</td>
+                <td><i class="fa fa-microchip" aria-hidden="true" style="color: #000000"></i> Pentium 2 266MHz or better
+                </td>
+            </tr>
+            <tr>
+                <td>Memory</td>
+                <td><i class="fa fa-tasks" aria-hidden="true" style="color: #7e8482"></i> 128 MB RAM</td>
+            </tr>
+            <tr>
+                <td>Hard drive</td>
+                <td><i class="fa fa-hdd-o" aria-hidden="true" style="color: #616263"></i> 25 MB free hard disk space
+                </td>
+            </tr>
+            <tr>
+                <td>Additional software</td>
+                <td><i class="fab fa-java" aria-hidden="true" style="color: #ea0006"></i> Java 8 required - <a
+                        href="https://java.com/download/">Download</a></td>
+            </tr>
 
-        </tbody>
-    </table>
+            </tbody>
+        </table>
     </div>
 
 
-
-    <h2 style="margin: 0">
+    <div>
+        <h2 style="margin: 0">
         <a id="supported-features" class="anchor" href="#supported-features" aria-hidden="true"><span
                 aria-hidden="true" class="octicon octicon-link"></span></a>Supported features</h2>
 
-    <table>
-        <thead style="background-color: #eaf5ff;">
-        <tr>
-            <th>Feature</th>
-            <th align="center" style="color: #4f7ece;"><i class="fa fa-windows" aria-hidden="true"></i></th>
-            <th align="center" style="color: black;"><i class="fab fa-linux" aria-hidden="true"></i></th>
-            <th align="center" style="color: #888888;"><i class="fab fa-apple" aria-hidden="true"></i></th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <td>Open</td>
-            <td align="center" style="color: green;"><i class="fa fa-check" aria-hidden="true" title="Supported"></i>
-            </td>
-            <td align="center" style="color: deepskyblue;"><i class="fa fa-snowflake-o" aria-hidden="true"
-                                                              title="Frozen"></i></td>
-            <td align="center" style="color: green;"><i class="fa fa-check" aria-hidden="true" title="Supported"></i>
-            </td>
-        </tr>
-        <tr>
-            <td>Edit</td>
-            <td align="center" style="color: green;"><i class="fa fa-check" aria-hidden="true" title="Supported"></i>
-            </td>
-            <td align="center" style="color: deepskyblue;"><i class="fa fa-snowflake-o" aria-hidden="true"
-                                                              title="Frozen"></i></td>
-            <td align="center" style="color: red;"><i class="fa fa-times" aria-hidden="true" title="Not supported"></i>
-            </td>
-        </tr>
-        <tr>
-            <td>Create new</td>
-            <td align="center" style="color: green;"><i class="fa fa-check" aria-hidden="true" title="Supported"></i>
-            </td>
-            <td align="center" style="color: deepskyblue;"><i class="fa fa-snowflake-o" aria-hidden="true"
-                                                              title="Frozen"></i></td>
-            <td align="center" style="color: green;"><i class="fa fa-check" aria-hidden="true" title="Supported"></i>
-            </td>
-        </tr>
-        <tr>
-            <td>Generate QR-Code</td>
-            <!--<td align="center" style="color: orange;"><i class="fa fa-dot-circle-o" aria-hidden="true"
-                                                         title="In development"></i></td>-->
-            <td align="center" style="color: green;"><i class="fa fa-check" aria-hidden="true" title="Supported"></i>
-            </td>
-            <td align="center" style="color: deepskyblue;"><i class="fa fa-snowflake-o" aria-hidden="true"
-                                                              title="Frozen"></i></td>
-            <td align="center" style="color: red;"><i class="fa fa-times" aria-hidden="true" title="Not supported"></i>
-            </td>
-        </tr>
-        <tr>
-            <td>URL auto-paste</td>
-            <td align="center" style="color: green;"><i class="fa fa-check" aria-hidden="true" title="Supported"></i>
-            </td>
-            <td align="center" style="color: deepskyblue;"><i class="fa fa-snowflake-o" aria-hidden="true"
-                                                              title="Frozen"></i></td>
-            <td align="center"><img src="img/icon32.png" style="width:20px;" title="WeblocOpener feature"/></td>
-        </tr>
-        <tr>
-            <td>Instant URL copy</td>
-            <td align="center" style="color: green;"><i class="fa fa-check" aria-hidden="true" title="Supported"></i>
-            </td>
-            <td align="center" style="color: deepskyblue;"><i class="fa fa-snowflake-o" aria-hidden="true"
-                                                              title="Frozen"></i></td>
-            <td align="center" style="color: red;"><i class="fa fa-times" aria-hidden="true" title="Not supported"></i>
-            </td>
-        </tr>
-        <tr>
-            <td>Auto-update</td>
-            <td align="center" style="color: green;"><i class="fa fa-check" aria-hidden="true" title="Supported"></i>
-            </td>
-            <td align="center" style="color: deepskyblue;"><i class="fa fa-snowflake-o" aria-hidden="true"
-                                                              title="Frozen"></i></td>
-            <td align="center"><img src="img/icon32.png" style="width:20px;" title="WeblocOpener feature"/></td>
-        </tr>
-        <tr>
-            <td>Open in not default browser</td>
-            <td align="center" style="color: green;"><i class="fa fa-check" aria-hidden="true" title="Supported"></i>
-            </td>
-            <td align="center" style="color: deepskyblue;"><i class="fa fa-snowflake-o" aria-hidden="true"
-                                                              title="Frozen"></i></td>
-            <td align="center" style="color: green;"><i class="fa fa-check" aria-hidden="true" title="Supported"></i>
-            </td>
-        </tr>
-        </tbody>
-    </table>
+        <table>
+            <thead style="background-color: #eaf5ff;">
+            <tr>
+                <th>Feature</th>
+                <th align="center" style="color: #4f7ece;"><i class="fa fa-windows" aria-hidden="true"></i></th>
+                <th align="center" style="color: black;"><i class="fab fa-linux" aria-hidden="true"></i></th>
+                <th align="center" style="color: #888888;"><i class="fab fa-apple" aria-hidden="true"></i></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Open</td>
+                <td align="center" style="color: green;"><i class="fa fa-check" aria-hidden="true"
+                                                            title="Supported"></i>
+                </td>
+                <td align="center" style="color: deepskyblue;"><i class="fa fa-snowflake-o" aria-hidden="true"
+                                                                  title="Frozen"></i></td>
+                <td align="center" style="color: green;"><i class="fa fa-check" aria-hidden="true"
+                                                            title="Supported"></i>
+                </td>
+            </tr>
+            <tr>
+                <td>Edit</td>
+                <td align="center" style="color: green;"><i class="fa fa-check" aria-hidden="true"
+                                                            title="Supported"></i>
+                </td>
+                <td align="center" style="color: deepskyblue;"><i class="fa fa-snowflake-o" aria-hidden="true"
+                                                                  title="Frozen"></i></td>
+                <td align="center" style="color: red;"><i class="fa fa-times" aria-hidden="true"
+                                                          title="Not supported"></i>
+                </td>
+            </tr>
+            <tr>
+                <td>Create new</td>
+                <td align="center" style="color: green;"><i class="fa fa-check" aria-hidden="true"
+                                                            title="Supported"></i>
+                </td>
+                <td align="center" style="color: deepskyblue;"><i class="fa fa-snowflake-o" aria-hidden="true"
+                                                                  title="Frozen"></i></td>
+                <td align="center" style="color: green;"><i class="fa fa-check" aria-hidden="true"
+                                                            title="Supported"></i>
+                </td>
+            </tr>
+            <tr>
+                <td>Generate QR-Code</td>
+                <!--<td align="center" style="color: orange;"><i class="fa fa-dot-circle-o" aria-hidden="true"
+                                                             title="In development"></i></td>-->
+                <td align="center" style="color: green;"><i class="fa fa-check" aria-hidden="true"
+                                                            title="Supported"></i>
+                </td>
+                <td align="center" style="color: deepskyblue;"><i class="fa fa-snowflake-o" aria-hidden="true"
+                                                                  title="Frozen"></i></td>
+                <td align="center" style="color: red;"><i class="fa fa-times" aria-hidden="true"
+                                                          title="Not supported"></i>
+                </td>
+            </tr>
+            <tr>
+                <td>URL auto-paste</td>
+                <td align="center" style="color: green;"><i class="fa fa-check" aria-hidden="true"
+                                                            title="Supported"></i>
+                </td>
+                <td align="center" style="color: deepskyblue;"><i class="fa fa-snowflake-o" aria-hidden="true"
+                                                                  title="Frozen"></i></td>
+                <td align="center"><img src="img/icon32.png" style="width:20px;" title="WeblocOpener feature"/></td>
+            </tr>
+            <tr>
+                <td>Instant URL copy</td>
+                <td align="center" style="color: green;"><i class="fa fa-check" aria-hidden="true"
+                                                            title="Supported"></i>
+                </td>
+                <td align="center" style="color: deepskyblue;"><i class="fa fa-snowflake-o" aria-hidden="true"
+                                                                  title="Frozen"></i></td>
+                <td align="center" style="color: red;"><i class="fa fa-times" aria-hidden="true"
+                                                          title="Not supported"></i>
+                </td>
+            </tr>
+            <tr>
+                <td>Auto-update</td>
+                <td align="center" style="color: green;"><i class="fa fa-check" aria-hidden="true"
+                                                            title="Supported"></i>
+                </td>
+                <td align="center" style="color: deepskyblue;"><i class="fa fa-snowflake-o" aria-hidden="true"
+                                                                  title="Frozen"></i></td>
+                <td align="center"><img src="img/icon32.png" style="width:20px;" title="WeblocOpener feature"/></td>
+            </tr>
+            <tr>
+                <td>Open in not default browser</td>
+                <td align="center" style="color: green;"><i class="fa fa-check" aria-hidden="true"
+                                                            title="Supported"></i>
+                </td>
+                <td align="center" style="color: deepskyblue;"><i class="fa fa-snowflake-o" aria-hidden="true"
+                                                                  title="Frozen"></i></td>
+                <td align="center" style="color: green;"><i class="fa fa-check" aria-hidden="true"
+                                                            title="Supported"></i>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
 
     <br>
 
     <div class="update_info" id="update_info_id">
-        <div id="update_title">Latest update - <span id="update_version">unavailable</span></div>
-        <!--<p><img src="img/versions/1.4.2.png" align="left" style="margin-right: 20px;"></p>-->
-        <h2 id="update_header"></h2>
+        <div id="update_title">Latest update -
+            <span id="update_header">unavailable</span>&nbsp;
+            <span id="update_version">unavailable</span>&nbsp;
+            <span id="update_downloads"><i class="fas fa-download"></i>&nbsp;<span id="update_download_count">unavailable</span></span>
+        </div>
         <div id="update_body">
             <div id="update_text">No info</div>
         </div>
@@ -657,10 +688,8 @@
                 href="https://github.com/benchdoos">benchdoos</a> (Eugene Zrazhevsky). <a
                 href="mailto:weblocopener@gmail.com" title="Send e-mail to me.">Contact me!</a>&nbsp;&nbsp;<a
                 href="http://t.me/bench_doos" title="Telegram: Contact me fast! @bench_doos"><img
-                src="img/telegram-icon-128.png" style="height: 18px;"/></a> <a rel="license"
-                                                                               href="https://github.com/benchdoos/WeblocOpener/blob/master/LICENSE/"><img
-                alt="Apache 2.0 License" style="border-width:0" src="img/license/asf_logo.png"
-                height="31px"/></a></span>
+                src="img/telegram-icon-128.png" style="height: 18px;"/></a></span>
+        <a rel="license" href="https://github.com/benchdoos/WeblocOpener/blob/master/LICENSE/">LICENSE</a><br>
 
         <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a
                 href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a

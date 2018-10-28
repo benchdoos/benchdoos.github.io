@@ -79,9 +79,10 @@ a:hover {
     margin-left: 10px;
 }
 
-@media screen and (max-width: 42em) {
+@media screen and (max-width: 64em) and (min-width: 42em) {
     .SRRoot {
         float: inherit;
+        margin: 0 0 10px;
     }
 }
 
