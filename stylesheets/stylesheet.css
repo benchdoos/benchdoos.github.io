@@ -212,6 +212,7 @@ a:hover {
         background: none !important;
     }
 }
+
 .second-page-header {
     color: #fff;
     text-align: center;
@@ -608,4 +609,12 @@ a:hover {
 .faq li img {
     padding-top: 5px;
     margin-left: -20px;
+}
+
+.notSelectable {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -o-user-select: none;
 }
