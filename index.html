@@ -2,9 +2,9 @@
 <html lang="en-us">
 <head>
     <meta charset="UTF-8">
-    <meta property="og:title" content="WeblocOpener" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://benchdoos.github.io/img/og-image.png" />
+    <meta property="og:title" content="WeblocOpener"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:image" content="https://benchdoos.github.io/img/og-image.png"/>
 
     <title>WeblocOpener - full support of .webloc files on Windows</title>
     <meta name="description" content="Open MacOS .webloc links on Windows">
@@ -144,7 +144,8 @@
 
 
     <div style="float:right; padding-left: 10px;">
-        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" style="float:right; padding-left: 10px;">
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post"
+              style="display:inline-flex; float:right; padding-left: 10px;">
 
             <!-- Identify your business so that you can collect the payments. -->
             <input type="hidden" name="business"
@@ -167,17 +168,20 @@
 
         </form>
         <a href="#update_info_id"
-           title="Latest update"><img src="img/update.png" style="height: 26px;"/></a>
+           title="Latest update" id="latest_update_button">
+            <i class="fas fa-sync-alt" style="display: inline-flex; margin-top: 5px;"></i>&nbsp;Latest Update</a>
 
         <a href="http://t.me/bench_doos"
-           title="Telegram: Contact me fast! @bench_doos"><img src="img/telegram-icon-128.png"
-                                                               style="height: 26px;"/></a>
+           title="Telegram: Contact me fast! @bench_doos" style="display: inline-flex;"><img
+                src="img/telegram-icon-128.png"
+                style="height: 26px;"/></a>
         <a href="mailto:weblocopener@gmail.com?subject=WeblocOpener feedback
     &body=Type here your question / problem, I try to help you as soon as it is possible!
     %0AYou can attach log files (see WeblocOpener - Settings -> About -> Log folder -> zip log folder -> attach).
 %0ADon't forget to close the application before zipping logs;)"
-           title="E-MAIL: Leave a feedback to help me to improve the application!"><img src="img/e-mail.png"
-                                                                                        style="height: 26px;"/></a>
+           title="E-MAIL: Leave a feedback to help me to improve the application!" style="display: inline-flex;"><img
+                src="img/e-mail.png"
+                style="height: 26px;"/></a>
     </div>
 
     <h2 style="margin-top:0;">
@@ -578,8 +582,10 @@
         <div id="update_title">Latest update -
             <span id="update_header" title="Update title">unavailable</span>&nbsp;
             <span class="notSelectable update_label" id="update_version" title="Current version">unavailable</span>
-            <span class="notSelectable update_label" title="Current version downloads count"><i class="fas fa-download"></i>&nbsp;<span id="update_download_count">unavailable</span></span>
-            <span class="notSelectable update_label" title="Published"><i class="far fa-clock"></i>&nbsp;<span id="update_download_date">unavailable</span></span>
+            <span class="notSelectable update_label" title="Current version downloads count"><i
+                    class="fas fa-download"></i>&nbsp;<span id="update_download_count">unavailable</span></span>
+            <span class="notSelectable update_label" title="Published"><i class="far fa-clock"></i>&nbsp;<span
+                    id="update_download_date">unavailable</span></span>
         </div>
         <div id="update_body">
             <div id="update_text">No info</div>
