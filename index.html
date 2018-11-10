@@ -89,7 +89,7 @@
     <script>
         /*якорь*/
         $(document).ready(function () {
-            $("#content").on("click", "a", function (event) {
+            $(".slowAnchor").on("click", "a", function (event) {
                 //отменяем стандартную обработку нажатия по ссылке
                 event.preventDefault();
 
@@ -167,9 +167,9 @@
                  src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif">
 
         </form>
-        <a href="#update_info_id"
+        <span class="slowAnchor"><a href="#update_info_id"
            title="Latest update" id="latest_update_button">
-            <i class="fas fa-sync-alt" style="display: inline-flex; margin-top: 5px;"></i>&nbsp;Latest Update</a>
+            <i class="fas fa-sync-alt" style="display: inline-flex; margin-top: 5px;"></i>&nbsp;Latest Update</a></span>
 
         <a href="http://t.me/bench_doos"
            title="Telegram: Contact me fast! @bench_doos" style="display: inline-flex;"><img
