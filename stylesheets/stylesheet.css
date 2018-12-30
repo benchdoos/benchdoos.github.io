@@ -196,7 +196,7 @@ a:hover {
         animation: none !important;
         color: #fff;
         text-align: center;
-        background: url(../img/air_balloon_400.png), linear-gradient(-45deg, #89b5f7, #3478ce) no-repeat;
+        background: url(../img/air_balloon_400.gif), linear-gradient(-45deg, #89b5f7, #3478ce) no-repeat;
         background-repeat: no-repeat;
         height: 400%;
     }
@@ -216,7 +216,7 @@ a:hover {
 .second-page-header {
     color: #fff;
     text-align: center;
-    background: url("../img/air_balloon_400.png") no-repeat right;
+    background: url("../img/air_balloon_400.gif") no-repeat right;
 
     -webkit-animation: second-page-header 15s ease infinite;
     -moz-animation: second-page-header 15s ease infinite;
@@ -292,7 +292,7 @@ a:hover {
         padding: 3rem 4rem;
         color: #fff;
         text-align: center;
-        background: url("../img/air_balloon_400.png") no-repeat right;
+        background: url("../img/air_balloon_400.gif") no-repeat right;
         background-size: 40%;
     }
 }
