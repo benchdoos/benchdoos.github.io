@@ -189,16 +189,15 @@ h1 {
 }
 
 .tabs > label[for*="1"]:before {
-    /*content: "\f059";*/
-    content: "\f17a";
+    content: "\f039";
 }
 
 .tabs > label[for*="2"]:before {
-    content: "\f17a";
+    content: "\f167";
 }
 
 .tabs > label[for*="3"]:before {
-    content: "\f17c";
+    content: "\f059";
 }
 
 .tabs > label[for*="4"]:before {
@@ -207,11 +206,11 @@ h1 {
 
 /* Цвет конкретных вкладок при выделении */
 .tabs > input:checked + label[for*="2"] {/*Windows*/
-    color: #00adef;
+    color: #d60000;
 }
 
 .tabs > input:checked + label[for*="3"] {/*Linux*/
-    color: black;
+    color: #0069ce;
 }
 
 .tabs > input:checked + label[for*="4"] {/*MacOS*/
