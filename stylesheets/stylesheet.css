@@ -28,7 +28,7 @@ a:hover {
     display: inline-block;
     margin-bottom: 1rem;
     color: rgba(255, 255, 255, 0.7);
-    background-color: rgba(255, 255, 255, 0.08);
+    background-color: rgba(255, 255, 255, 0.2);
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 0.3rem;
     transition: color 0.2s, background-color 0.2s, border-color 0.2s;
