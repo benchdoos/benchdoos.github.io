@@ -50,7 +50,11 @@
         });
 
         $.get('https://api.github.com/repos/benchdoos/WeblocOpener/releases/latest', function (data) {
-            $('.browser_download_url').attr('href', data.assets[0].browser_download_url);
+            $('.setup_url_windows').attr('href', data.assets[1].browser_download_url);
+        });
+
+        $.get('https://api.github.com/repos/benchdoos/WeblocOpener/releases/latest', function (data) {
+            $('.setup_url_unix').attr('href', data.assets[0].browser_download_url);
         });
     </script>
 
@@ -131,11 +135,15 @@
     <div class="second-page-header"><h1 class="project-name">WeblocOpener</h1>
         <h2 class="project-tagline">Open <i class="fa fa-apple" aria-hidden="true"></i> MacOS Safari
             <code>.webloc</code>
-            link-files on <i class="fa fa-windows" aria-hidden="true"></i> Windows</h2>
+            link-files on <br><i aria-hidden="true" class="fa fa-windows"></i> Windows and <i aria-hidden="true"
+                                                                                              class="fab fa-linux"></i>Debian
+            GNU/Linux</h2>
         <a href="https://vk.cc/6wK9bM" class="btn">View on GitHub</a>
 
 
-        <a class="btn browser_download_url">Download Setup</a>
+        <a class="btn setup_url_windows">Download for <i aria-hidden="true" class="fa fa-windows"></i></a>
+        <a class="btn setup_url_unix">Download for <i aria-hidden="true" class="fab fa-linux"></i></a>
+
         <!--<a href="https://github.com/benchdoos/WeblocOpener/zipball/master" class="btn">Download .zip</a>
         <a href="https://github.com/benchdoos/WeblocOpener/tarball/master" class="btn">Download .tar.gz</a>-->
     </div>
