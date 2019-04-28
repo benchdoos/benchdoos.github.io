@@ -558,41 +558,41 @@ a:hover {
     }
 }
 
-#youtubeDefault iframe {
+.youtubeDefault iframe {
     width: 740px;
     height: 416px;
 }
 
 @media screen and (min-width: 64em) {
-    #youtubeDefault iframe {
+    .youtubeDefault iframe {
         width: 740px;
         height: 416px;
     }
 }
 
 @media screen and (min-width: 42em) and (max-width: 64em) {
-    #youtubeDefault iframe {
+    .youtubeDefault iframe {
         width: 560px;
         height: 315px;
     }
 }
 
 @media screen and (max-width: 42em) {
-    #youtubeDefault iframe {
+    .youtubeDefault iframe {
         width: 510px;
         height: 285px;
     }
 }
 
 @media screen and (max-width: 480px) {
-    #youtubeDefault iframe {
+    .youtubeDefault iframe {
         width: 300px;
         height: 168px;
     }
 }
 
 @media screen and (max-width: 320px) {
-    #youtubeDefault iframe {
+    .youtubeDefault iframe {
         width: 250px;
         height: 140px;
     }
