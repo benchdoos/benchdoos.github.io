@@ -37,7 +37,10 @@
             $('#update_version').text(data.tag_name);
         });
         $.get('https://api.github.com/repos/benchdoos/WeblocOpener/releases/latest', function (data) {
-            $('#update_download_count').text(data.assets[0].download_count);
+            $('#update_unix_download_count').text(data.assets[0].download_count);
+        });
+        $.get('https://api.github.com/repos/benchdoos/WeblocOpener/releases/latest', function (data) {
+            $('#update_windows_download_count').text(data.assets[1].download_count);
         });
         $.get('https://api.github.com/repos/benchdoos/WeblocOpener/releases/latest', function (data) {
             $('#update_download_date').text(data.published_at);
@@ -50,11 +53,11 @@
         });
 
         $.get('https://api.github.com/repos/benchdoos/WeblocOpener/releases/latest', function (data) {
-            $('.setup_url_windows').attr('href', data.assets[1].browser_download_url);
+            $('.setup_url_unix').attr('href', data.assets[0].browser_download_url);
         });
 
         $.get('https://api.github.com/repos/benchdoos/WeblocOpener/releases/latest', function (data) {
-            $('.setup_url_unix').attr('href', data.assets[0].browser_download_url);
+            $('.setup_url_windows').attr('href', data.assets[1].browser_download_url);
         });
     </script>
 
@@ -608,9 +611,21 @@
         <div id="update_title"><span style="font-size: 12px;">Latest update -</span><br>
             <span id="update_header" title="Update title">unavailable</span>&nbsp;
             <span class="notSelectable update_label" id="update_version" title="Current version">unavailable</span>
-            <a class="browser_download_url" style="color: #606c71;text-decoration: none;"><span
-                    class="notSelectable update_label" title="Current version downloads count"><i
-                    class="fas fa-download"></i>&nbsp;<span id="update_download_count">unavailable</span></span></a>
+            <a class="setup_url_windows" style="color: #606c71;text-decoration: none;">
+                <span class="notSelectable update_label" title="Current version downloads count on Windows">
+                    <i aria-hidden="true" class="fa fa-windows"></i>
+                    <i class="fas fa-download"></i>&nbsp;
+                    <span id="update_windows_download_count">unavailable</span>
+                </span>
+            </a>
+            &nbsp;
+            <a class="setup_url_unix" style="color: #606c71;text-decoration: none;">
+                <span class="notSelectable update_label" title="Current version downloads count on Linux">
+                    <i aria-hidden="false" class="fa fa-linux"></i>
+                    <i class="fas fa-download"></i>&nbsp;
+                    <span id=update_unix_download_count>unavailable</span>
+                </span>
+            </a>
             <span class="notSelectable update_label" title="Published"><i class="far fa-clock"></i>&nbsp;<span
                     id="update_download_date">unavailable</span></span>
         </div>
