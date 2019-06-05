@@ -288,6 +288,7 @@ a:hover {
         background: linear-gradient(-45deg, #89b5f7, #3478ce);
         background-size: 400% 400%;
     }
+
     .second-page-header {
         padding: 3rem 4rem;
         color: #fff;
@@ -628,4 +629,17 @@ a:hover {
     -ms-user-select: none;
     user-select: none;
     -o-user-select: none;
+}
+
+
+.forHosting {
+    width: 100%;
+    background: #3478ce;
+    color: #fff;
+    display: flow-root;
+}
+
+#forHostingExtended {
+    display: none;
+    padding: 10px;
 }

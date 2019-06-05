@@ -208,6 +208,66 @@
                 style="height: 26px;"/></a>
     </div>
 
+
+    <a class="clickOpenDonate" href="" style="text-align: right; text-decoration: none;">
+        <div class="forHosting">
+            <h2 style="color:white; text-align: center; margin-bottom: 10px;">WeblocOpener online</h2>
+            <p style="margin-bottom: 0; margin-right: 10px">
+                read more</p>
+            <script type="text/javascript">
+                $(document).ready(function () {
+                    $(".clickOpenDonate").click(function () {
+                        $("#forHostingExtended").slideToggle("slow");
+                        $(this).toggleClass("active");
+                        return false;
+                    });
+                });
+            </script>
+        </div>
+    </a>
+    <div class="forHosting" id="forHostingExtended">
+        Hello! My name is Eugene Zrazhevsky. I am WeblocOpener developer.<br>
+        Most of users of WeblocOpener download it to open <code>.webloc</code> file for one or two times.<br>
+        So why they should do it? What if there will be a new service, based on WeblocOpener project,<br>
+        that will give the same options?<br><br>
+        So I've got an idea: website (or telegram bot) with WeblocOpener options: open, create <code>.webloc</code>
+        files,
+        QR-Code generators<br>
+        with drag-and-drop features. All of it can be realised, but there is a problem:<br>
+        Github pages does not support java projects, so I need a new hosting (with domain name in case of
+        website).<br><br>
+        Good hosting with good options cost for 1-2 year of using: <code>$250</code> - <code>$500</code>.<br><br>
+        If you want me to realise this idea, please donate, and when it's ready - you will be able<br>
+        to operate with <code>.webloc</code> files without downloading the app.<br>
+        <br>
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" style="text-align: center">
+
+            <!-- Identify your business so that you can collect the payments. -->
+            <input name="business" type="hidden"
+                   value="eugeny.zrazhevsky@icloud.com">
+
+            <!-- Specify a Donate button. -->
+            <input name="cmd" type="hidden" value="_donations">
+
+            <!-- Specify details about the contribution -->
+            <input name="item_name" type="hidden" value="Donation for WeblocOpener">
+            <!--<input type="hidden" name="item_number" value="WeblocOpener">-->
+            <input name="currency_code" type="hidden" value="USD">
+
+            <!-- Display the payment button. -->
+            <input alt="Donate" name="submit"
+                   src="img/paypal-donate-button.png"
+                   type="image">
+            <img alt="" height="1" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif"
+                 width="1">
+        </form>
+        <br>
+        P.S. There is a pool in WeblocOpener's telegram channel. If we imagine, that I have all money<br>
+        I needed to make WeblocOpener online possible, what it should be: a website or a telegram bot.<br>
+        Link to a pool: <a href="https://t.me/WeblocOpener/34" style="color: #c1d8f7;">link</a>.
+    </div>
+    <br>
+
     <h2 style="margin-top:0;">
         <a id="introduction" class="anchor" href="#introduction" aria-hidden="true"><span aria-hidden="true"
                                                                                           class="octicon octicon-link"></span></a>Introduction:
