@@ -17,7 +17,7 @@ table td {
 }
 
 a {
-    color: #1A5092;
+    color: #518ad0;
     text-decoration: none;
 }
 
@@ -28,7 +28,7 @@ a:hover {
 .btn {
     display: inline-block;
     margin-bottom: 1rem;
-    color: rgba(166, 166, 166, 0.7);
+    color: rgba(226, 226, 226, 0.7);
     background-color: rgba(255, 255, 255, 0.2);
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 0.3rem;
@@ -372,7 +372,7 @@ a:hover {
     margin-top: 2rem;
     margin-bottom: 1rem;
     font-weight: normal;
-    color: #4f7ece;
+    color: #5594ff;
 }
 
 .main-content p {
@@ -635,7 +635,7 @@ a:hover {
 
 .forHosting {
     width: 100%;
-    background: #3478ce;
+    background: #285a9d;
     color: #fff;
     display: flow-root;
 }
