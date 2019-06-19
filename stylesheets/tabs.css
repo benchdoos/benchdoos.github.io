@@ -121,14 +121,14 @@ h1 {
     min-height: 169px;
     display: none;
     padding: 15px;
-    background: #fff;
+    /*background: #fff;*/
     border: 1px solid #ddd;
 }
 
 .tabs > section > p {
     margin: 0 0 5px;
     line-height: 1.5;
-    color: #383838;
+    color: #dcdcdc;
     /* прикрутим анимацию */
     -webkit-animation-duration: 1s;
     animation-duration: 1s;
@@ -176,7 +176,7 @@ h1 {
     color: #aaa;
     border: 0px solid #ddd;
     border-width: 1px 1px 1px 1px;
-    background: #f1f1f1;
+    background: #4c4f54;
     border-radius: 3px 3px 0 0;
 }
 
@@ -220,7 +220,7 @@ h1 {
 /* Изменения стиля переключателей вкладок при наведении */
 
 .tabs > label:hover {
-    color: #888;
+    color: #eaeaea;
     cursor: pointer;
 }
 
@@ -230,7 +230,7 @@ h1 {
     color: #4f7ece;
     border-top: 1px solid #4f7ece;
     border-bottom: 1px solid #fff;
-    background: #fff;
+    /*background: #fff;*/
 }
 
 /* Активация секций с помощью псевдокласса :checked */

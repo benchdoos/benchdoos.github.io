@@ -3,7 +3,8 @@
     border: solid #eaf5ff;
     border-width: 1px 1px 0 1px;
     border-radius: 8px 8px 0 0;
-    background-color: #eaf5ff;
+    /*background-color: #eaf5ff;*/
+    background-color: #4c4f54;
     margin-bottom: 0;
     /*padding: 0 10px 0 10px;*/
     font-weight: bold;
@@ -17,9 +18,11 @@
 }
 
 .update_label {
+    color: white;
     font-size: 14px;
     padding: 0 .4em 0;
-    background-color: #e2e2e2;
+    /*background-color: #e2e2e2;*/
+    background-color: #9b9c9f;
     border-radius: 4px;
     font-weight: bold;
     white-space: nowrap;
