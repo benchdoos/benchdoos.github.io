@@ -25,38 +25,25 @@
 
 
     <script src="libs/jquery.min.js"></script>
+    <script src="libs/utils.js" type="application/javascript"></script>
     <script>
         $.get('https://api.github.com/repos/benchdoos/WeblocOpener/releases/latest', function (data) {
             $('#tag_name').text(data.tag_name);
-        });
-        $.get('https://api.github.com/repos/benchdoos/WeblocOpener/releases/latest', function (data) {
             $('#update_header').text(data.name);
-        });
-        $.get('https://api.github.com/repos/benchdoos/WeblocOpener/releases/latest', function (data) {
             $('#update_version').text(data.tag_name);
-        });
-        $.get('https://api.github.com/repos/benchdoos/WeblocOpener/releases/latest', function (data) {
-            $('#update_unix_download_count').text(data.assets[0].download_count);
-        });
-        $.get('https://api.github.com/repos/benchdoos/WeblocOpener/releases/latest', function (data) {
-            $('#update_windows_download_count').text(data.assets[1].download_count);
-        });
-        $.get('https://api.github.com/repos/benchdoos/WeblocOpener/releases/latest', function (data) {
+
+            let assets = data.assets;
+
+            let windowsSetup = findAsset(assets, ".*\.exe");
+            let debSetup = findAsset(assets, ".*\.deb");
+
+            $('#update_windows_download_count').text(windowsSetup.download_count);
+            $('#update_unix_download_count').text(debSetup.download_count);
             $('#update_download_date').text(data.published_at);
-        });
-        $.get('https://api.github.com/repos/benchdoos/WeblocOpener/releases/latest', function (data) {
             $('#update_text').html(data.body);
-        });
-        $.get('https://api.github.com/repos/benchdoos/WeblocOpener/releases/latest', function (data) {
-            $('#download_count').text(data.assets[0].download_count);
-        });
-
-        $.get('https://api.github.com/repos/benchdoos/WeblocOpener/releases/latest', function (data) {
-            $('.setup_url_unix').attr('href', data.assets[0].browser_download_url);
-        });
-
-        $.get('https://api.github.com/repos/benchdoos/WeblocOpener/releases/latest', function (data) {
-            $('.setup_url_windows').attr('href', data.assets[1].browser_download_url);
+            $('#download_count').text((windowsSetup.download_count + debSetup.download_count));
+            $('.setup_url_unix').attr('href', debSetup.browser_download_url);
+            $('.setup_url_windows').attr('href', windowsSetup.browser_download_url);
         });
     </script>
 
