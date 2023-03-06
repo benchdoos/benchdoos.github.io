@@ -130,13 +130,9 @@ a:hover {
     color: #929292;
     text-align: center;
     /* W3C */
-    background: linear-gradient(-45deg, #6d91c6, #275b9c);
-    background-size: 400% 400%;
-
-    -webkit-animation: page-header 15s ease infinite;
-    -moz-animation: page-header 15s ease infinite;
-    -o-animation: page-header 15s ease infinite;
-    animation: page-header 15s ease infinite;
+    background-size: 100% 100%;
+    background-position: 0px 0px,0px 0px,0px 0px,0px 0px;
+    background-image: radial-gradient(75% 73% at 68% 7%, #000000FF 1%, #00000038 67%, #00FFFF00 100%),radial-gradient(75% 73% at 6% 14%, #0000FF 0%, #00FFFF00 100%),radial-gradient(75% 75% at 16% 91%, #29A8DF 1%, #00FFFF00 100%),radial-gradient(100% 130% at 100% 59%, #FF00FFFF 0%, #FF00FFFF 22%, #0000FF 100%);
 }
 
 @-webkit-keyframes page-header {
