@@ -65,8 +65,8 @@ a:hover {
         width: 100%;
         padding: 0.75rem;
         font-size: 0.9rem;
-        color: rgb(115, 115, 115);
-        background-color: rgba(255, 255, 255, 0.3);
+        color: #FFFFFF;
+        background-color: rgba(7, 7, 7, 0.38);
     }
 
     .btn + .btn {
@@ -193,7 +193,7 @@ a:hover {
         animation: none !important;
         color: #fff;
         text-align: center;
-        background: url(../img/air_balloon_400.png), linear-gradient(-45deg, #6d91c6, #275b9c) no-repeat;
+        background: url(../img/air_balloon_400.png), radial-gradient(75% 73% at 68% 7%, #000000FF 1%, #00000038 67%, #00FFFF00 100%),radial-gradient(75% 73% at 6% 14%, #0000FF 0%, #00FFFF00 100%),radial-gradient(75% 75% at 16% 91%, #29A8DF 1%, #00FFFF00 100%),radial-gradient(100% 130% at 100% 59%, #FF00FFFF 0%, #FF00FFFF 22%, #0000FF 100%);
         background-repeat: no-repeat;
         height: 400%;
     }
@@ -282,8 +282,7 @@ a:hover {
         color: #fff;
         text-align: center;
         /* W3C */
-        background: linear-gradient(-45deg, #6d91c6, #275b9c);
-        background-size: 400% 400%;
+        background-image: radial-gradient(75% 73% at 68% 7%, #000000FF 1%, #00000038 67%, #00FFFF00 100%),radial-gradient(75% 73% at 6% 14%, #0000FF 0%, #00FFFF00 100%),radial-gradient(75% 75% at 16% 91%, #29A8DF 1%, #00FFFF00 100%),radial-gradient(100% 130% at 100% 59%, #FF00FFFF 0%, #FF00FFFF 22%, #0000FF 100%);
     }
 
     .second-page-header {
@@ -352,7 +351,7 @@ a:hover {
     .project-tagline {
         font-size: 1.10rem;
         opacity: 1;
-        background-color: RGBa(193, 216, 247, 0.4);
+        background-color: rgba(7, 7, 7, 0.38);
     }
 }
 
