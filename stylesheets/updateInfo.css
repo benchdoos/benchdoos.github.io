@@ -4,7 +4,7 @@
     border-width: 1px 1px 0 1px;
     border-radius: 8px 8px 0 0;
     /*background-color: #eaf5ff;*/
-    background-color: #4c4f54;
+    background-color: #1c222b;
     margin-bottom: 0;
     /*padding: 0 10px 0 10px;*/
     font-weight: bold;
@@ -13,12 +13,12 @@
 
 
 #update_header {
-    color: #1e6bb8;
+    color: #3e64dd;
     white-space: nowrap;
 }
 
 .update_label {
-    color: white;
+    color: #383e41;
     font-size: 14px;
     padding: 0 .4em 0;
     /*background-color: #e2e2e2;*/
@@ -44,7 +44,7 @@
     vertical-align: top;
     display: inline-flex;
 
-    background-color: #1e6bb8;
+    background-color: #3e64dd;
     color: white;
     padding: 0 .4em 0;
     border-radius: 4px;
